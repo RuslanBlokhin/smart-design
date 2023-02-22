@@ -1,1 +1,45 @@
-// @import 'node_modules/modern-normalize/modern-normalize.css';
+/* Сброс стилей для h1-h6, p */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+p {
+    margin: 0;
+}
+
+/* Убираем маркеры из списков */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    line-height: 160%;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+}
+
