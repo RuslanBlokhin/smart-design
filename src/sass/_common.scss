@@ -28,9 +28,17 @@ img {
 }
 
 a {
-    line-height: 160%;
+    font-weight: 400;
+    line-height: 1.6;
     text-decoration: none;
     color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+input {
+    padding: 0;
+    outline: none;
+    // border: none;
 }
 
 body {
@@ -38,7 +46,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 160%;
+    line-height: 1.6;
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
 }
