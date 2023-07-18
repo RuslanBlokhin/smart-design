@@ -231,6 +231,10 @@ export const sitemapList = [
         path: 'policy.html',
     },
     {
+        name: 'Пользовательское соглашение',
+        path: 'agreement.html',
+    },
+    {
         name: 'Главная',
         path: 'index.html',
     },

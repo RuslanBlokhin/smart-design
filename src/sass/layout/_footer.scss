@@ -157,6 +157,10 @@
             font-size: 8px;
             line-height: 1.25;
             letter-spacing: 0.02em;
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
         }
 
         &__nav {
@@ -250,6 +254,10 @@
             font-size: 9px;
             line-height: 1.33;
             letter-spacing: 0.02em;
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
         }
 
         &__nav {
