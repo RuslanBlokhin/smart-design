@@ -7,19 +7,29 @@
     }
     &__item {
         &:not(:last-child) {
-            margin-bottom: 60px;
-        }
-        &:nth-child(3),
-        &:nth-child(4) {
-            display: none;
+            margin-bottom: 30px;
         }
     }
     &__item-title {
         margin-bottom: 10px;
     }
     &__item-description {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         color: var(--secondary-text-color);
+
+        &:last-child,
+        &:nth-last-child(2) {
+            font-weight: 500;
+            color: var(--primary-text-color);
+        }
+    }
+    &__item-icon {
+        max-width: 100px;
+    }
+    &__icon-wrapper {
+        float: left;
+        width: 100px;
+        margin: 10px 10px 0 0;
     }
     &__item-images {
         display: flex;
@@ -47,7 +57,7 @@
         }
         &__item {
             &:not(:last-child) {
-                margin-bottom: 96px;
+                margin-bottom: 60px;
             }
         }
         &__item-title {
@@ -57,6 +67,7 @@
             letter-spacing: -0.3px;
         }
         &__item-description {
+            margin-bottom: 15px;
             font-size: 17px;
             line-height: 160%;
         }
@@ -83,7 +94,7 @@
         &__item {
             &:not(.headingPost) {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
 
                 &:nth-child(odd) {
                     gap: 78px;
@@ -98,9 +109,6 @@
                 .delivery__item-description {
                     margin-bottom: 0;
                 }
-                &:last-child {
-                    display: none;
-                }
             }
             &.headingPost {
                 .delivery__item-description {
@@ -108,11 +116,15 @@
                 }
             }
         }
+        &__item-text-block {
+            min-width: 402px;
+        }
         &__item-title {
-            font-size: 50px;
+            font-size: 36px;
             letter-spacing: -0.5px;
         }
         &__item-description {
+            margin-bottom: 20px;
             font-size: 16px;
             line-height: 150%;
         }
@@ -134,11 +146,12 @@
         }
         &__item {
             &:not(.headingPost) {
+                align-items: center;
                 &:nth-child(odd) {
                     gap: 49px;
                 }
                 &:not(:last-child) {
-                    margin-bottom: 180px;
+                    margin-bottom: 120px;
                 }
             }
             &.headingPost {
