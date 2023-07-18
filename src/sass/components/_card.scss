@@ -1,0 +1,206 @@
+.card {
+    &__image-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 15px;
+        padding: 63px 30px;
+        background-color: #f8f8f9;
+        border-radius: 3px;
+    }
+
+    &__top {
+        position: absolute;
+        padding: 4px 15px;
+        top: 50px;
+        right: 0;
+        color: var(--primary-white-color);
+        background-color: #ff374a;
+        text-align: center;
+        font-weight: 380;
+        font-size: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+    }
+
+    &__icon-like {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 24px;
+
+        .likeLogo {
+            path {
+                @include trans(fill);
+                fill: var(--primary-text-color);
+            }
+        }
+
+        &:hover {
+            .likeLogo {
+                path {
+                    fill: #3f3f3f;
+                }
+            }
+        }
+    }
+
+    &__image-wrapper {
+        background-color: #f8f8f9;
+    }
+
+    &__description-block {
+        @include fc(space-between);
+    }
+
+    &__pen {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        margin-right: 5px;
+        font-size: 18px;
+        line-height: 1.27;
+        letter-spacing: 0.01em;
+    }
+
+    &__pen-colors {
+        display: flex;
+        align-items: center;
+    }
+
+    &__pen-color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        @include trans(all);
+        cursor: pointer;
+
+        &:not(:last-child) {
+            position: relative;
+            right: 3px;
+        }
+    }
+
+    &__pen-sizes {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    &__pen-color-label {
+        &:not(:first-child) {
+            .card__pen-color {
+                margin-left: -3px;
+            }
+        }
+    }
+
+    &__pen-size-label,
+    &__pen-color-label {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__pen-color-input,
+    &__pen-size-input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    &__pen-size-input {
+        &:checked + .card__pen-size {
+            color: #fff;
+            background-color: var(--primary-text-color);
+        }
+    }
+
+    &__pen-color-input {
+        &:checked + .card__pen-color {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__pen-size {
+        @include fc(center);
+        width: 17px;
+        height: 17px;
+        background-color: #f5f5f5;
+        border-radius: 30px;
+        color: #747474;
+        font-weight: 450;
+        font-size: 8px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        border: 1px solid #fff;
+        @include trans(all);
+        cursor: pointer;
+
+        &:hover {
+            border-color: var(--primary-text-color);
+            color: var(--primary-text-color);
+        }
+    }
+
+    &__pen-price {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-color);
+    }
+
+    &__basket-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 2px;
+        @include trans(background-color);
+
+        &:hover {
+            background-color: #3f3f3f;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .card {
+        &__top {
+            top: 64px;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .card {
+        &__image-block {
+            padding: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .card {
+        .likeLogo {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__icon-like {
+            height: 30px;
+        }
+
+        &__pen-size {
+            width: 27px;
+            height: 27px;
+            font-size: 13px;
+            line-height: 17px;
+        }
+    }
+}

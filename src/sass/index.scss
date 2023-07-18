@@ -1,30 +1,50 @@
-@import './container';
-@import './common';
-@import './variables';
-//components
-@import './card';
-@import './button';
-@import './filter';
-@import './footer';
-@import './header';
-@import './informer';
-@import './tabs';
-@import './logo';
-//pages
-// @import './404';
-// @import './about';
-// @import './auth';
-// @import './basket';
-// @import './blog';
-// @import './business';
-// @import './catalog';
-// @import './contacts';
-// @import './FAQ';
-// @import './main';
-// @import './payments';
-// @import './personalArea';
-// @import './privacyPolicy';
-// @import './product';
-// @import './search';
-// @import './siteMap';
-// @import './wholesale';
+// Base
+@import './base/fonts';
+@import './base/common';
+@import './base/container';
+// Utils
+@import './utils/variables';
+@import './utils/mixins';
+// Ui-kit
+@import './ui-kit/button';
+@import './ui-kit/filterDesktop';
+@import './ui-kit/filterPrice';
+@import './ui-kit/mobileFilters';
+@import './ui-kit/checkbox';
+@import './ui-kit/input';
+@import './ui-kit/textarea';
+// Components
+@import './components/card';
+@import './components/filter';
+@import './components/informer';
+@import './components/logo';
+@import './components/logotype';
+@import './components/tabs';
+@import './components/section';
+@import './components/titleBlock';
+@import './components/pagination';
+//Modals
+@import './modals/mobileMenu';
+@import './modals/desktopMenu';
+@import './modals/searchModal';
+@import './modals/basketModal';
+
+// Layout
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+@import './layout/about';
+@import './layout/catalog';
+@import './layout/product';
+@import './layout/basket';
+@import './layout/personal';
+@import './layout/auth';
+@import './layout/faq';
+@import './layout/contacts';
+@import './layout/policy';
+@import './layout/error';
+@import './layout/sitemap';
+@import './layout/payment';
+@import './layout/delivery';
+@import './layout/blog';
+@import './layout/b2b';

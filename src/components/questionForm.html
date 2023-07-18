@@ -1,0 +1,28 @@
+<form class="contacts__question-from">
+    <div class="contacts__question-input-wrapper top">
+        <div class="contacts__question-input-description">Имя</div>
+        <input name="name" type="text" class="contacts__question-input input input-required" />
+    </div>
+    <div class="contacts__question-input-wrapper-desktop">
+        <div class="contacts__question-input-wrapper">
+            <div class="contacts__question-input-description">Телефон</div>
+            <input name="phone" type="number" class="contacts__question-input input input-required" />
+        </div>
+        <div class="contacts__question-input-wrapper">
+            <div class="contacts__question-input-description">Email</div>
+            <input name="email" type="email" class="contacts__question-input input input-required" />
+        </div>
+    </div>
+    <div class="contacts__question-input-wrapper category">
+        <div class="contacts__question-input-description">Категория вопроса</div>
+        <div name="category" type="text" class="contacts__question-input input"></div>
+        <div class="contacts__question-arrow-wrapper">
+            <include src="icons/arrowDownLogo.html"></include>
+        </div>
+    </div>
+    <div class="contacts__question-input-wrapper">
+        <div class="contacts__question-input-description">Сообщение</div>
+        <textarea name="message" type="text" class="contacts__question-input input-required textarea"></textarea>
+    </div>
+</form>
+<button class="contacts__question-btn btn btn--black">Отправить</button>

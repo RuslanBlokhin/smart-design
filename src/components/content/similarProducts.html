@@ -1,0 +1,35 @@
+<section class="product__similar section">
+    <div class="product__similar-title-block">
+        <div class="product__similar-title-block-wrapper">
+            <div class="product__similar-title">{{title}}</div>
+            <div class="product__similar-arrows">
+                <button id="icon-left" type="button" class="product__icon-arrow-wrapper">
+                    <include src="icons/product/arrowLeftLogo.html" />
+                </button>
+                <button id="icon-right" type="button" class="product__icon-arrow-wrapper">
+                    <include src="icons/product/arrowRightLogo.html" />
+                </button>
+            </div>
+        </div>
+        <div class="product__similar-title-block-wrapper1920">
+            <button id="similar-filter" type="button" class="product__similat-filter active">{{title}}</button>
+            <button id="accessories-filter" type="button" class="product__similat-filter">КОМПЛЕКТУЮЩИЕ</button>
+        </div>
+    </div>
+    <div id="similar-products-wrapper" class="product__similar-wrapper">
+        <div id="similar-products" class="product__similar-cards">
+            <div id="products-item" class="catalog__products-item">
+                <include src="components/cards/card.html" />
+            </div>
+            <div class="catalog__products-item">
+                <include src="components/cards/card.html" />
+            </div>
+            <div class="catalog__products-item">
+                <include src="components/cards/card.html" />
+            </div>
+            <div class="catalog__products-item">
+                <include src="components/cards/card.html" />
+            </div>
+        </div>
+    </div>
+</section>

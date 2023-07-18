@@ -1,0 +1,121 @@
+<main class="blog">
+    <include src="components/titleBlock.html" locals='{ "title": "Наш блог"}'></include>
+    <div class="container">
+        <div class="blog__wrapper">
+            <div class="blog__main-block">
+                <div class="blog__filters basket__order-details-checkboxes">
+                    <label class="basket__order-details-label">
+                        <input name="blog-filter" type="radio" class="basket__order-details-input" checked />
+                        <div class="basket__order-details-ckeckbox">Ручки</div>
+                    </label>
+                    <label class="basket__order-details-label">
+                        <input name="blog-filter" type="radio" class="basket__order-details-input" />
+                        <div class="basket__order-details-ckeckbox">Блокноты</div>
+                    </label>
+                    <label class="basket__order-details-label">
+                        <input name="blog-filter" type="radio" class="basket__order-details-input" />
+                        <div class="basket__order-details-ckeckbox">Аксессуары</div>
+                    </label>
+                    <label class="basket__order-details-label">
+                        <input name="blog-filter" type="radio" class="basket__order-details-input" />
+                        <div class="basket__order-details-ckeckbox">Материалы</div>
+                    </label>
+                    <label class="basket__order-details-label">
+                        <input name="blog-filter" type="radio" class="basket__order-details-input" />
+                        <div class="basket__order-details-ckeckbox">Материалы</div>
+                    </label>
+                </div>
+                <div class="blog__main-block-wrapper">
+                    <ul id="blog-list" class="blog__list"></ul>
+                    <div id="blog-article" class="blog__article" hidden></div>
+                </div>
+            </div>
+            <div class="blog__desktop-block">
+                <div class="blog__image-wrapper">
+                    <img src="images/blog/man.png" alt="man" />
+                    <div class="blog__author-info">
+                        <div class="blog__author-text">Автор</div>
+                        <div class="blog__author-name">Прекрасный человек</div>
+                    </div>
+                </div>
+                <div class="blog__category block">
+                    <h3 class="blog__desktop-block-title">Категории</h3>
+                    <ul class="blog__category-list">
+                        <li class="blog__category-item">Чернила (1)</li>
+                        <li class="blog__category-item">Перья (1)</li>
+                        <li class="blog__category-item">Ручки (1)</li>
+                        <li class="blog__category-item">Аксессуары (1)</li>
+                        <li class="blog__category-item">Шарики (1)</li>
+                        <li class="blog__category-item">Ролики (1)</li>
+                    </ul>
+                </div>
+                <div class="blog__posts block">
+                    <h3 class="blog__desktop-block-title">Недавние посты</h3>
+                    <ul class="blog__posts-list">
+                        <li class="blog__posts-item">
+                            <div class="blog__posts-date">Январь 1, 2023</div>
+                            <div class="blog__posts-name">How To Make Your Home A Showplace</div>
+                        </li>
+                        <li class="blog__posts-item">
+                            <div class="blog__posts-date">Январь 1, 2023</div>
+                            <div class="blog__posts-name">How To Choose The Right Sectional Sofa</div>
+                        </li>
+                        <li class="blog__posts-item">
+                            <div class="blog__posts-date">Январь 1, 2023</div>
+                            <div class="blog__posts-name">Fix Up your Dining Room for the Holidays</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__archive block">
+                    <h3 class="blog__desktop-block-title">Архив</h3>
+                    <div class="blog__archive-select">
+                        <div class="blog__select-title">
+                            <div id="select-name" class="blog__select-title-name">Выберите месяц</div>
+                            <include src="icons/arrowDownLogo.html"></include>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__tags block">
+                    <h3 class="blog__desktop-block-title">Теги/категории</h3>
+                    <ul class="blog__tags-list">
+                        <li class="blog__tags-item">Architecture</li>
+                        <li class="blog__tags-item">Interior design</li>
+                        <li class="blog__tags-item">Minimalist</li>
+                        <li class="blog__tags-item">Chair</li>
+                        <li class="blog__tags-item">Furniture</li>
+                        <li class="blog__tags-item">Living room</li>
+                        <li class="blog__tags-item">Featured</li>
+                        <li class="blog__tags-item">Home decor</li>
+                        <li class="blog__tags-item">Apartment</li>
+                        <li class="blog__tags-item">Sofa</li>
+                    </ul>
+                </div>
+                <div class="blog__social-networks">
+                    <h3 class="blog__desktop-block-title">Smart Design в соцсетях</h3>
+                    <ul class="blog__social-networks-list">
+                        <li class="blog__social-networks-item">
+                            <a href="#" class="blog__social-networks-link">YOUTUBE</a>
+                        </li>
+                        <li class="blog__social-networks-item">
+                            <a href="#" class="blog__social-networks-link">VKONTAKTE</a>
+                        </li>
+                        <li class="blog__social-networks-item">
+                            <a href="#" class="blog__social-networks-link">TELEGRAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="similar-articles" class="blog__similar-articles" hidden>
+        <h2 class="blog__similar-articles-title">Похожие статьи</h2>
+        <div class="glide blog__similar-articles-carousel">
+            <div class="glide__track" data-glide-el="track">
+                <ul id="similar-articles-list" class="glide__slides blog__similar-articles-list"></ul>
+            </div>
+        </div>
+    </div>
+    <include src="components/pagination.html"></include>
+</main>
+<script src="./js/main.js" type="module" defer></script>
+<script src="./js/blog.js" type="module" defer></script>

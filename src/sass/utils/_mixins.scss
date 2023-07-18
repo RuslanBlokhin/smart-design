@@ -1,0 +1,9 @@
+@mixin fc($justify: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin trans($prop: all) {
+    transition: $prop 100ms ease-in;
+}

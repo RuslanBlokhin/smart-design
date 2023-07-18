@@ -1,0 +1,534 @@
+<main class="product">
+    <div class="container">
+        <section class="product__info section">
+            <div class="glide product__carousel">
+                <button id="like-icon" type="button" class="product__icon-wrapper product__like-icon">
+                    <include src="icons/product/likeLogo.html" />
+                </button>
+                <button id="screen-icon" type="button" class="product__icon-wrapper product__screen-icon">
+                    <include src="icons/product/screenLogo.html" />
+                </button>
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides product__carousel-list">
+                        <li class="glide__slide product__carousel-item">
+                            <img src="images/pen.png" alt="BrendLogo" class="product__about-image" />
+                        </li>
+                        <li class="glide__slide product__carousel-item">
+                            <img src="images/pen.png" alt="BrendLogo" class="product__about-image" />
+                        </li>
+                        <li class="glide__slide product__carousel-item">
+                            <img src="images/pen.png" alt="BrendLogo" class="product__about-image" />
+                        </li>
+                    </ul>
+                    <div data-glide-el="controls" class="product__controls">
+                        <button type="button" class="glide__arrow product__controls-arrow" data-glide-dir="<">
+                            <include src="icons/product/arrowLeftLogo.html"></include>
+                        </button>
+                        <div class="glide__bullets product__controls-dots" data-glide-el="controls[nav]">
+                            <button class="glide__bullet product__controls-dot" data-glide-dir="=0"></button>
+                            <button class="glide__bullet product__controls-dot" data-glide-dir="=1"></button>
+                            <button class="glide__bullet product__controls-dot" data-glide-dir="=2"></button>
+                        </div>
+                        <button type="button" class="glide__arrow product__controls-arrow" data-glide-dir=">">
+                            <include src="icons/product/arrowRightLogo.html"></include>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product__info-block">
+                <div>
+                    <div class="product__subtitle">РУЧКА ШАРИКОВАЯ</div>
+                    <div class="product__title">
+                        <include src="icons/product/lamyLogo.html"></include>
+                        <div class="product__rating640">
+                            <div>
+                                <include src="icons/product/starLogo.html"></include>
+                            </div>
+                            <div class="product__review-quantity">2 отзыва</div>
+                        </div>
+                    </div>
+                    <p class="product__price">₽ 8000</p>
+                    <div class="product__rating">
+                        <div>
+                            <include src="icons/product/starLogo.html"></include>
+                        </div>
+                        <div class="product__review-quantity">2 отзыва</div>
+                    </div>
+                </div>
+                <p class="product__review">
+                    Sed ligula sapien, fermentum id est eget, viverra auctor sem. Vivamus maximus enim vitae urna porta,
+                    ut euismod nibh lacinia.
+                </p>
+                <div class="product__color-size-block">
+                    <div class="product__color-block">
+                        <span class="product__color-size-text">Цвет</span>
+                        <div class="product__color-list">
+                            <label class="product__color-label">
+                                <input name="color" type="radio" class="product__color-input" />
+                                <div class="product__color">
+                                    <div class="product__color-inner color1"></div>
+                                </div>
+                            </label>
+                            <label class="product__color-label">
+                                <input name="color" type="radio" class="product__color-input" />
+                                <div class="product__color">
+                                    <div class="product__color-inner color2"></div>
+                                </div>
+                            </label>
+                            <label class="product__color-label">
+                                <input name="color" type="radio" class="product__color-input" />
+                                <div class="product__color">
+                                    <div class="product__color-inner color3"></div>
+                                </div>
+                            </label>
+                            <label class="product__color-label">
+                                <input name="color" type="radio" class="product__color-input" />
+                                <div class="product__color">
+                                    <div class="product__color-inner color4"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product__size-block">
+                        <span class="product__color-size-text">Размер</span>
+                        <div class="product__size-list">
+                            <label class="product__size-label">
+                                <input name="size" type="radio" class="product__size-input" />
+                                <div class="product__size-quantity">E</div>
+                            </label>
+                            <label class="product__size-label">
+                                <input name="size" type="radio" class="product__size-input" />
+                                <div class="product__size-quantity">F</div>
+                            </label>
+                            <label class="product__size-label">
+                                <input name="size" type="radio" class="product__size-input" />
+                                <div class="product__size-quantity">M</div>
+                            </label>
+                            <label class="product__size-label">
+                                <input name="size" type="radio" class="product__size-input" />
+                                <div class="product__size-quantity">L</div>
+                            </label>
+                            <label class="product__size-label">
+                                <input name="size" type="radio" class="product__size-input" />
+                                <div class="product__size-quantity">L</div>
+                            </label>
+                            <label class="product__size-label">
+                                <input name="size" type="radio" class="product__size-input" />
+                                <div class="product__size-quantity">?</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__weight-article-block">
+                    <div class="product__weight-block">
+                        <span class="product__weight-article-text">ВЕС:</span>
+                        <span class="product__weight-article-quantity">34 грамма</span>
+                    </div>
+                    <div>
+                        <span class="product__weight-article-text">АРТИКУЛ:</span>
+                        <span class="product__weight-article-quantity">685487514845</span>
+                    </div>
+                </div>
+                <div class="product__purchase-block">
+                    <div class="product__counter">
+                        <button type="button" class="product__counter-minus">-</button>
+                        <div class="product__counter-quantity">2</div>
+                        <button type="button" class="product__counter-minus">+</button>
+                    </div>
+                    <button id="add-product" type="button" class="product__basket-button btn btn--black">
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="product__description section">
+            <div class="product__description-block title">
+                <div id="title-wrapper" class="product__description-title-wrapper title-wrapper">
+                    <div class="product__description-title">О БРЕНДЕ</div>
+                    <div class="arrowWrapper">
+                        <include src="icons/product/arrowDownLogo.html" />
+                    </div>
+                </div>
+                <div class="product__about-wrapper" hidden>
+                    <div class="product__about-image-wrapper">
+                        <img
+                            src="images/product/lamy.png"
+                            srcset="
+                                images/product/lamy.png      280w,
+                                images/product/lamy640.png   640w,
+                                images/product/lamy980.png   980w,
+                                images/product/lamy1920.png 1920w
+                            "
+                            alt="BrendLogo"
+                            class="product__about-image"
+                        />
+                    </div>
+                    <div class="product__about-description">
+                        Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac
+                        ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in
+                        vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu..Ac dis
+                        vestibulum ut primis eleifend at neque at ornare mus nostra non senectus magna natoque porta
+                        scelerisque molestie taciti lobortis torquent ullamcorper a ullamcorper. Hac suspendisse varius
+                        ut et consectetur eu in nisi vestibulum consectetur ultricies in dictum consectetur eu hendrerit
+                        ante tortor sagittis etiam porta scelerisque molestie
+                    </div>
+                    <div id="description-list" class="product__description-list-wrapper" hidden>
+                        <ul class="product__description-list">
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">100% Original Products</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Free Delivery on order above $1199</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Cash on delivery might be available</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Easy 30 days returns and exchanges</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Easy 30 days returns and exchanges</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Material & Care : 100% Cotton</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Machine-wash cold</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Machine-wash cold</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Free Delivery on order above $1199</div>
+                            </li>
+                            <li class="product__description-item">
+                                <div class="product__description-dot"></div>
+                                <div class="product__description-text">Free Delivery on order above $1199</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="more-button" type="button" id="" class="product__about-more">
+                        <span class="product__about-more-text">Подробнее</span>
+                        <div id="arrow-down" class="arrowWrapper">
+                            <include src="icons/product/arrowDownLogo.html" />
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="product__video-block title">
+                <div id="title-wrapper" class="product__description-title-wrapper title-wrapper">
+                    <div class="product__description-title">ВИДЕО</div>
+                    <div class="arrowWrapper">
+                        <include src="icons/product/arrowDownLogo.html" />
+                    </div>
+                </div>
+                <div class="product__video-wrapper" hidden>
+                    <img
+                        src="images/product/video.png"
+                        srcset="
+                            images/product/video.png      280w,
+                            images/product/video640.png   640w,
+                            images/product/video980.png   980w,
+                            images/product/video1920.png 1920w
+                        "
+                        alt="video"
+                        class="product__about-image"
+                    />
+                    <!-- <video src="" class="product__video"></video> -->
+                </div>
+            </div>
+            <div class="product__reviews-block title">
+                <div id="title-wrapper" class="product__description-title-wrapper title-wrapper">
+                    <div class="product__description-title">ОТЗЫВЫ</div>
+                    <div class="arrowWrapper">
+                        <include src="icons/product/arrowDownLogo.html"></include>
+                    </div>
+                </div>
+                <div class="product__review-wrapper" hidden>
+                    <div class="product__reviews">
+                        <div class="product__reviews-title">(2) отзыва для товара “Lamy Shark”</div>
+                        <ul class="product__reviews-list">
+                            <li class="product__reviews-item">
+                                <div class="product__review-avatar"></div>
+                                <div class="product__review-info">
+                                    <div class="product__review-date">08 September, 2022</div>
+                                    <div class="product__reviewer-name">Алексей Пономарев</div>
+                                    <div class="product__reviewer-text">
+                                        “Sed ligula sapien, fermentum id est eget, viverra auctor sem. Vivamus maximus
+                                        enim vitae urna porta, ut euismod nibh lacinia ellentesque at diam "
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__reviews-item">
+                                <div class="product__review-avatar"></div>
+                                <div class="product__review-info">
+                                    <div class="product__review-date">08 September, 2022</div>
+                                    <div class="product__reviewer-name">Алексей Пономарев</div>
+                                    <div class="product__reviewer-text">
+                                        “Sed ligula sapien, fermentum id est eget, viverra auctor sem. Vivamus maximus
+                                        enim vitae urna porta, ut euismod nibh lacinia ellentesque at diam "
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <form id="review-form" class="product__form">
+                        <div class="product__form-title">Оставьте отзыв для товара “Lamy Shark”</div>
+                        <div class="product__form-description">
+                            Адрес вашей почты не публикуется. Красным отмечены обязательные для заполнения поля.
+                        </div>
+                        <div class="product__form-rating">
+                            <h3 class="product__form-rating-text">Рейтинг</h3>
+                            <include src="icons/product/starLogo.html"></include>
+                        </div>
+                        <div class="product__form-review">
+                            <h3 class="product__form-review-title">
+                                Ваш отзыв
+                                <span class="product__form-review-redstart">*</span>
+                            </h3>
+                            <textarea class="product__form-review-text textarea input-required"></textarea>
+                        </div>
+                        <div class="product__form-reviewer-name">
+                            <h3 class="product__form-review-title">
+                                Ваше имя
+                                <span class="product__form-review-redstart">*</span>
+                            </h3>
+                            <input class="product__form-review-text input input-required" />
+                        </div>
+                        <div class="product__form-reviewer-email">
+                            <h3 class="product__form-review-title">
+                                Ваш email
+                                <span class="product__form-review-redstart">*</span>
+                            </h3>
+                            <input class="product__form-review-text input input-required" />
+                        </div>
+                        <div class="product__form-savedata">
+                            <label class="product__form-savedata-label">
+                                <input name="save-data" type="checkbox" class="product__form-savedata-input" />
+                                <div class="product__form-savedata-ckeckbox"></div>
+                                <p class="product__form-savedata-description">
+                                    Сохранить мои данные в этом браузере если я захочу написать еще комментарии
+                                </p>
+                            </label>
+                        </div>
+                        <button class="product__form-button btn btn--black">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="product__description640 section">
+            <div class="product__description640-title-wrapper">
+                <button id="about-tab" class="product__description640-title active">О БРЕНДЕ</button>
+                <button id="video-tab" class="product__description640-title">ВИДЕО</button>
+                <button id="reviews-tab" class="product__description640-title">
+                    ОТЗЫВЫ
+                    <span class="product__reviews-quantity">(2)</span>
+                </button>
+            </div>
+            <div id="about-block" class="product__description640-block">
+                <div class="product__about-wrapper">
+                    <div class="product__about-image-wrapper">
+                        <img
+                            src="images/product/lamy.png"
+                            srcset="
+                                images/product/lamy.png      280w,
+                                images/product/lamy640.png   640w,
+                                images/product/lamy980.png   980w,
+                                images/product/lamy1920.png 1920w
+                            "
+                            alt="BrendLogo"
+                            class="product__about-image"
+                        />
+                    </div>
+                    <div class="product__about-right-block">
+                        <div class="product__about-description">
+                            Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin
+                            ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra,
+                            in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit
+                            arcu..Ac dis vestibulum ut primis eleifend at neque at ornare mus nostra non senectus magna
+                            natoque porta scelerisque molestie taciti lobortis torquent ullamcorper a ullamcorper. Hac
+                            suspendisse varius ut et consectetur eu in nisi vestibulum consectetur ultricies in dictum
+                            consectetur eu hendrerit ante tortor sagittis etiam porta scelerisque molestie
+                        </div>
+                        <div id="description-list640" class="product__description-list-wrapper" hidden>
+                            <ul class="product__description-list">
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">100% Original Products</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Free Delivery on order above $1199</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Cash on delivery might be available</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Easy 30 days returns and exchanges</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Easy 30 days returns and exchanges</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Material & Care : 100% Cotton</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Machine-wash cold</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Machine-wash cold</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Free Delivery on order above $1199</div>
+                                </li>
+                                <li class="product__description-item">
+                                    <div class="product__description-dot"></div>
+                                    <div class="product__description-text">Free Delivery on order above $1199</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="more-button640" type="button" class="product__about-more">
+                            <span class="product__about-more-text">Подробнее</span>
+                            <div id="arrow-down640" class="arrowWrapper">
+                                <include src="icons/product/arrowDownLogo.html" />
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="video-block" class="product__video-block title" hidden>
+                <div class="product__video-wrapper">
+                    <img
+                        src="images/product/video.png"
+                        srcset="
+                            images/product/video.png      280w,
+                            images/product/video640.png   640w,
+                            images/product/video980.png   980w,
+                            images/product/video1920.png 1920w
+                        "
+                        alt="video"
+                        class="product__about-image"
+                    />
+                    <!-- <video src="" class="product__video"></video> -->
+                </div>
+            </div>
+            <div id="reviews-block" class="product__reviews-block title" hidden>
+                <div class="product__review-wrapper">
+                    <div class="product__reviews">
+                        <div class="product__reviews-title">(2) отзыва для товара “Lamy Shark”</div>
+                        <ul class="product__reviews-list">
+                            <li class="product__reviews-item">
+                                <div class="product__review-avatar"></div>
+                                <div class="product__review-info">
+                                    <div class="product__review-date">08 September, 2022</div>
+                                    <div class="product__reviewer-name">Алексей Пономарев</div>
+                                    <div class="product__reviewer-text">
+                                        “Sed ligula sapien, fermentum id est eget, viverra auctor sem. Vivamus maximus
+                                        enim vitae urna porta, ut euismod nibh lacinia ellentesque at diam "
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__reviews-item">
+                                <div class="product__review-avatar"></div>
+                                <div class="product__review-info">
+                                    <div class="product__review-date">08 September, 2022</div>
+                                    <div class="product__reviewer-name">Алексей Пономарев</div>
+                                    <div class="product__reviewer-text">
+                                        “Sed ligula sapien, fermentum id est eget, viverra auctor sem. Vivamus maximus
+                                        enim vitae urna porta, ut euismod nibh lacinia ellentesque at diam "
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <form id="review-form" class="product__form">
+                        <div class="product__form-title">Оставьте отзыв для товара “Lamy Shark”</div>
+                        <div class="product__form-description">
+                            Адрес вашей почты не публикуется. Красным отмечены обязательные для заполнения поля.
+                        </div>
+                        <div class="product__form-rating">
+                            <h3 class="product__form-rating-text">Рейтинг</h3>
+                            <include src="icons/product/starLogo.html"></include>
+                        </div>
+                        <div class="product__form-review">
+                            <h3 class="product__form-review-title">
+                                Ваш отзыв
+                                <span class="product__form-review-redstart">*</span>
+                            </h3>
+                            <textarea class="product__form-review-text textarea input-required"></textarea>
+                        </div>
+                        <div class="product__reviewer-name-email-block">
+                            <div class="product__form-reviewer-name">
+                                <h3 class="product__form-review-title">
+                                    Ваше имя
+                                    <span class="product__form-review-redstart">*</span>
+                                </h3>
+                                <input class="product__form-review-text input input-required" />
+                            </div>
+                            <div class="product__form-reviewer-email">
+                                <h3 class="product__form-review-title">
+                                    Ваш email
+                                    <span class="product__form-review-redstart">*</span>
+                                </h3>
+                                <input class="product__form-review-text input input-required" />
+                            </div>
+                        </div>
+                        <div class="product__form-savedata">
+                            <label class="product__form-savedata-label">
+                                <input name="save-data" type="checkbox" class="product__form-savedata-input" />
+                                <div class="product__form-savedata-ckeckbox"></div>
+                                <p class="product__form-savedata-description">
+                                    Сохранить мои данные в этом браузере если я захочу написать еще комментарии
+                                </p>
+                            </label>
+                        </div>
+                        <button class="product__form-button btn btn--black">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="product__advantages section">
+            <div class="product__advantages-item">
+                <div class="product__advantages-icon">
+                    <include src="icons/product/shippingLogo.html"></include>
+                </div>
+                <p class="product__advantages-text">Бесплатная доствака</p>
+                <p class="product__advantages-condition">При заказе от ₽5000</p>
+            </div>
+            <div class="product__advantages-item">
+                <div class="product__advantages-icon">
+                    <include src="icons/product/returnLogo.html"></include>
+                </div>
+                <p class="product__advantages-text">Возврат в течении 30 дней</p>
+                <p class="product__advantages-condition">При сохранении целостности</p>
+            </div>
+            <div class="product__advantages-item">
+                <div class="product__advantages-icon">
+                    <include src="icons/product/securePaymentLogo.html"></include>
+                </div>
+                <p class="product__advantages-text">Безопасные платежи</p>
+                <p class="product__advantages-condition">Система какая-то</p>
+            </div>
+        </section>
+    </div>
+    <include src="components/content/similarProducts.html" locals='{"title": "ПОХОЖИЕ ТОВАРЫ"}'></include>
+</main>
+<script src="./js/product.js" type="module" defer></script>
+<script src="./js/main.js" type="module" defer></script>
+input input-required

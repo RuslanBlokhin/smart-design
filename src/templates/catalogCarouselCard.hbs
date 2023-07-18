@@ -1,0 +1,15 @@
+<li class='glide__slide catalog__brand-carousel-item'>
+    <div class='catalog__brand-carousel-image-wrapper'>
+        <img src='{{image}}' alt='brand' class='catalog__brand-carousel-image' />
+    </div>
+    <div class='catalog__brand-carousel-text-block'>
+        <span class='catalog__brand-carousel-about'>О БРЕНДЕ</span>
+        <img class='catalog__brand-carousel-brand' src='{{icon}}' alt='brand-icon' />
+        <p class='catalog__brand-carousel-text'>{{text}}</p>
+        {{#if pars}}
+            {{#each pars}}
+                <p class='catalog__brand-carousel-text'>{{this}}</p>
+            {{/each}}
+        {{/if}}
+    </div>
+</li>

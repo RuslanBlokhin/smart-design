@@ -1,0 +1,48 @@
+.underlay {
+    .informer {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        width: 350px;
+        margin-left: -175px;
+        margin-top: -91px;
+        padding: 30px 20px 30px 30px;
+        background: #ffffff;
+        border-radius: 10px;
+
+        &__title-wrapper {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        &__title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        &__icon-wrapper {
+            height: 25px;
+            margin-bottom: 12px;
+        }
+
+        .crossLogo {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .underlay {
+        .informer {
+            width: 403px;
+            padding: 30px;
+            margin-left: -201px;
+
+            &__text {
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        }
+    }
+}

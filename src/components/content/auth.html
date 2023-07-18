@@ -1,0 +1,87 @@
+<main class="auth container">
+    <div id="login-block" class="auth__login-block">
+        <h2 class="auth__title">Вход</h2>
+        <form class="auth__form">
+            <div class="auth__input-wrapper">
+                <div class="auth__input-name">Email</div>
+                <input name="email" type="text" class="auth__input input input-required" required />
+            </div>
+            <div class="auth__input-wrapper">
+                <div class="auth__input-name">Пароль</div>
+                <input name="password" type="password" class="auth__input input input-required" required />
+            </div>
+        </form>
+        <button id="forgot-password-btn" type="button" class="auth__forgot-password btn">Забыли пароль ?</button>
+        <div class="auth__buttons-block">
+            <button id="login-btn" type="button" class="auth__button btn btn--black">Войти</button>
+            <button id="registration-block-btn" type="button" class="auth__button btn btn--white">
+                Зарегистрироваться
+            </button>
+        </div>
+    </div>
+    <div id="registration-block" class="auth__registration-block" hidden>
+        <h2 class="auth__title">Регистрация</h2>
+        <form class="auth__form">
+            <div class="auth__input-wrapper">
+                <div class="auth__input-name">Email</div>
+                <input name="email" type="text" class="auth__input input input-required" required />
+            </div>
+            <div class="auth__input-wrapper">
+                <div class="auth__input-name">Пароль</div>
+                <input name="password" type="password" class="auth__input input input-required" required />
+            </div>
+        </form>
+        <button id="login-block-btn" type="button" class="auth__forgot-password btn">Уже есть аккаунт ? Войти</button>
+        <div class="auth__buttons-block">
+            <button id="rigistration-btn" type="button" class="auth__button btn btn--black">Зарегистрироваться</button>
+        </div>
+    </div>
+    <div id="access-recovery-block" class="auth__access-recovery-block" hidden>
+        <h2 class="auth__title">Восстановление доступа</h2>
+        <div class="auth__input-wrapper">
+            <div class="auth__input-name">Введите зарегистрированный email</div>
+            <input name="email" type="text" class="auth__input input input-required" required />
+        </div>
+        <div class="auth__buttons-block">
+            <button id="access-recovery-btn" type="button" class="auth__button btn btn--black">
+                Восстановить пароль
+            </button>
+        </div>
+    </div>
+    <div class="auth__social-networks-blcok">
+        <div class="auth__social-networks-title-wrapper">
+            <div class="auth__social-networks-title-line"></div>
+            <div class="auth__social-networks-title">вход через соцсети</div>
+            <div class="auth__social-networks-title-line"></div>
+        </div>
+        <ul class="auth__social-networks-list">
+            <li class="auth__social-networks-item">
+                <button type="button" class="auth__social-networks-btn btn">
+                    <include src="icons/auth/googleLogo.html"></include>
+                </button>
+            </li>
+            <li class="auth__social-networks-item">
+                <button type="button" class="auth__social-networks-btn btn">
+                    <include src="icons/auth/mailLogo.html"></include>
+                </button>
+            </li>
+            <li class="auth__social-networks-item">
+                <button type="button" class="auth__social-networks-btn btn">
+                    <include src="icons/auth/okLogo.html"></include>
+                </button>
+            </li>
+            <li class="auth__social-networks-item">
+                <button type="button" class="auth__social-networks-btn btn">
+                    <include src="icons/auth/vkLogo.html"></include>
+                </button>
+            </li>
+            <li class="auth__social-networks-item">
+                <button type="button" class="auth__social-networks-btn btn">
+                    <include src="icons/auth/yandexLogo.html"></include>
+                </button>
+            </li>
+        </ul>
+    </div>
+</main>
+<script src="./js/auth.js" type="module" defer></script>
+<script src="./js/main.js" type="module" defer></script>

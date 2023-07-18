@@ -1,0 +1,83 @@
+.desktopMenuUnderlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    overflow-y: scroll;
+
+    .desktopMenu {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        left: 0;
+        background: #ffffff;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+            padding: 30px 20px;
+            margin: 0 auto;
+        }
+
+        &__block {
+            width: 238px;
+
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__title-link {
+            display: block;
+            font-weight: 450;
+            font-size: 20px;
+            line-height: 26px;
+            cursor: pointer;
+        }
+
+        &__item {
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 11px;
+            }
+        }
+
+        &__item-link {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .desktopMenu {
+        .desktopMenu {
+            position: absolute;
+            top: 100px;
+            width: 100vw;
+            left: 0;
+            background: #ffffff;
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+
+            &__wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 1920;
+                padding: 30px 41px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

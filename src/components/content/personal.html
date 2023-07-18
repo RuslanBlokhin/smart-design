@@ -1,0 +1,217 @@
+<main class="personal">
+    <include src="components/titleBlock.html" locals='{ "title": "Личный кабинет"}'></include>
+    <div class="container">
+        <div class="personal__title-desktop">
+            <h1 class="personal__title">Личный кабинет</h1>
+            <div class="title-block__nav">
+                <a href="index.html" class="title-block__link">Главная</a> / Личный кабинет
+            </div>
+        </div>
+        <div class="personal__navigation">
+            <div class="personal__navigation-mobile-block">
+                <div data-name="personal-info" class="personal__navigation-item active">Личная информация</div>
+                <div data-name="personal-orders" class="personal__navigation-item">Мои заказы</div>
+            </div>
+            <div id="orders-filter" class="personal__orders-filter" hidden>
+                <div id="orders-filter-title" class="personal__orders-filter-title">
+                    <div class="personal__filter-text">Все заказы</div>
+                    <div class="personal__orders-filter-arrow-wrapper">
+                        <include src="icons/arrowDownLogo.html"></include>
+                    </div>
+                </div>
+                <div id="orders-filter-options" class="personal__orders-filter-options" hidden>
+                    <label class="personal__orders-filter-option">
+                        <span class="personal__orders-filter-option-text">Все</span>
+                        <input
+                            type="radio"
+                            checked
+                            name="personal-orders-filter"
+                            class="personal__orders-filter-input"
+                        />
+                        <div class="personal__orders-filter-check-logo">
+                            <include src="icons/checkLogoMin.html"></include>
+                        </div>
+                    </label>
+                    <label class="personal__orders-filter-option">
+                        <span class="personal__orders-filter-option-text">Сборка</span>
+                        <input type="radio" name="personal-orders-filter" class="personal__orders-filter-input" />
+                        <div class="personal__orders-filter-check-logo">
+                            <include src="icons/checkLogoMin.html"></include>
+                        </div>
+                    </label>
+                    <label class="personal__orders-filter-option">
+                        <span class="personal__orders-filter-option-text">В пути</span>
+                        <input type="radio" name="personal-orders-filter" class="personal__orders-filter-input" />
+                        <div class="personal__orders-filter-check-logo">
+                            <include src="icons/checkLogoMin.html"></include>
+                        </div>
+                    </label>
+                    <label class="personal__orders-filter-option">
+                        <span class="personal__orders-filter-option-text">Выдано</span>
+                        <input type="radio" name="personal-orders-filter" class="personal__orders-filter-input" />
+                        <div class="personal__orders-filter-check-logo">
+                            <include src="icons/checkLogoMin.html"></include>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div id="close-order-btn" hidden>
+                <div class="personal__navigation-close">
+                    <span class="personal__navigation-close-text">Закрыть</span>
+                    <include src="icons/crossLogo.html"></include>
+                </div>
+            </div>
+        </div>
+        <div id="personal-info" class="personal__info personal__block">
+            <div id="personal-recipient-data" class="personal__recipient">
+                <div class="personal__recipient-data inner-block">
+                    <h3 class="personal__recipient-title">Данные получателя</h3>
+                    <label class="checkbox__label inner-block">
+                        <input name="use-personal-data" type="checkbox" class="checkbox__input" />
+                        <div class="checkbox__checkbox"><div class="checkbox__checkbox-inner"></div></div>
+                        <p class="checkbox__description basket__form-usedata-description">
+                            Использовать мои данные из личного кабинета
+                        </p>
+                    </label>
+                    <form class="personal__recipient-form">
+                        <div class="personal__recipient-input-wrapper">
+                            <div class="personal__recipient-input-title">Имя*</div>
+                            <input
+                                id="recipient-name"
+                                type="text"
+                                class="personal__recipient-input input input-required"
+                            />
+                        </div>
+                        <div class="personal__recipient-input-wrapper">
+                            <div class="personal__recipient-input-title">Фамилия*</div>
+                            <input
+                                id="recipient-second-name"
+                                type="text"
+                                class="personal__recipient-input input input-required"
+                            />
+                        </div>
+                        <div class="personal__recipient-input-wrapper">
+                            <div class="personal__recipient-input-title">Телефон*</div>
+                            <input
+                                id="recipient-phone"
+                                type="text"
+                                class="personal__recipient-input input input-required"
+                            />
+                        </div>
+                        <div class="personal__recipient-input-wrapper">
+                            <div class="personal__recipient-input-title">Email*</div>
+                            <input
+                                id="recipient-email"
+                                type="text"
+                                class="personal__recipient-input input input-required"
+                            />
+                        </div>
+                    </form>
+                </div>
+                <div class="personal__delivery-details inner-block">
+                    <h3 class="personal__inner-block-title">Детали доставки</h3>
+                    <p class="personal__delivery-description">Выберите курьерскую службу</p>
+                    <include src="components/courierService.html"></include>
+                </div>
+                <div class="personal__delivery-method inner-block">
+                    <h3 class="personal__inner-block-title">Куда доставить заказ?</h3>
+                    <p class="basket__order-delivery-subtitle">Выберите тип доставки</p>
+                    <include src="components/deliveryMethod.html"></include>
+                </div>
+                <div class="basket__order-delivery-map-wrapper">
+                    <div class="basket__order-delivery-map-address">
+                        <h3 class="basket__order-delivery-map-title">Укажите адрес</h3>
+                        <input class="basket__order-delivery-map-input input" />
+                    </div>
+                    <div class="basket__order-delivery-map">
+                        <picture>
+                            <source srcset="images/basket/map980.png" media="(min-width: 980px)" type="image/png" />
+                            <source srcset="images/basket/map640.png" media="(min-width: 640px)" type="image/png" />
+                            <img src="images/basket/map.png" alt="innovative" />
+                        </picture>
+                    </div>
+                </div>
+                <button id="save-personal-data" class="personal__save-data-btn btn btn--black">Сохранить</button>
+            </div>
+            <div id="personal-user-data" class="personal__user" hidden>
+                <div class="personal__user-title-wrapper">
+                    <h3 class="personal__user-title">Данные пользователя</h3>
+                    <div class="personal__user-change-data-btn">Изменить</div>
+                </div>
+                <label class="checkbox__label">
+                    <input name="use-data-delivery" type="checkbox" class="checkbox__input" />
+                    <div class="checkbox__checkbox"><div class="checkbox__checkbox-inner"></div></div>
+                    <p class="checkbox__description basket__form-usedata-description">
+                        Использовать мои данные при оформлении доставки
+                    </p>
+                </label>
+                <div class="personal__user-data">
+                    <div class="personal__user-data-item">
+                        <div class="personal__user-data-title">Имя*</div>
+                        <div class="personal__user-data-text">Имя пользователя</div>
+                    </div>
+                    <div class="personal__user-data-item">
+                        <div class="personal__user-data-title">Фамилия*</div>
+                        <div class="personal__user-data-text">Фамилия пользователя</div>
+                    </div>
+                    <div class="personal__user-data-item">
+                        <div class="personal__user-data-title">Телефон*</div>
+                        <div class="personal__user-data-text">+ 7 909 606 7070</div>
+                    </div>
+                    <div class="personal__user-data-item email">
+                        <div>
+                            <div class="personal__user-data-title">Email*</div>
+                            <div class="personal__user-data-text">
+                                zakaz@mail.com
+                                <div class="personal__user-email-confirmed">
+                                    <div class="personal__user-email-confirmed-text">Email подтвержден</div>
+                                    <include src="icons/personal/emailConfirm.html"></include>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal__user-data-item">
+                        <div class="personal__user-data-title">Адрес доставки</div>
+                        <div class="personal__user-data-text">г. Москва, ул. Улица, д.60, кв. 60</div>
+                    </div>
+                    <div class="personal__user-data-item">
+                        <div class="personal__user-data-title">Способ доставки</div>
+                        <div class="personal__user-data-text">Не указан</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="personal-orders" class="personal__orders personal__block" hidden>
+            <div class="personal__orders-block">
+                <div class="personal__orders-mobile">
+                    <div class="personal__orders-title">
+                        <h3 class="personal__orders-number-text">Номер</h3>
+                        <h3 class="personal__orders-number-text">Статус</h3>
+                    </div>
+                    <ul id="personal-orders-list" class="personal__orders-list"></ul>
+                </div>
+                <div class="personal__orders-tablet">
+                    <div class="personal__orders-tablet-header">
+                        <h3 class="personal__header-item">Номер</h3>
+                        <h3 class="personal__header-item">Адрес</h3>
+                        <h3 class="personal__header-item">Статус</h3>
+                        <h3 class="personal__header-item">Стоимость</h3>
+                    </div>
+                    <ul id="personal-orders-list-tablet" class="personal__orders-tablet-list"></ul>
+                </div>
+            </div>
+            <div id="personal-order" class="personal__order" hidden>
+                <div class="personal__order-info">
+                    <h3 class="personal__order-number number">Заказ 55-75845</h3>
+                    <h4 class="personal__order-number status">• В пути</h4>
+                    <h4 class="personal__order-number address">г. Ханты-Мансийск, ул. Первомайская, д.98</h4>
+                </div>
+                <ul id="order-products-list" class="personal__order-products-list"></ul>
+                <h3 class="personal__order-sum">Сумма: 8,800 ₽</h3>
+                <button class="personal__order-repeat-btn btn btn--black">Повторить заказ</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="./js/personal.js" type="module" defer></script>
+<script src="./js/main.js" type="module" defer></script>

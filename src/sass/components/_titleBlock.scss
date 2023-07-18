@@ -1,0 +1,52 @@
+.title-block {
+    position: relative;
+    height: 170px;
+    @include fc(center);
+    background: url(../images/coverLarge.png);
+    background-size: unset;
+
+    &__wrapper {
+        min-width: 375px;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 5px;
+    }
+    &__nav,
+    &__link {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+        color: var(--secondary-text-color);
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .title-block {
+        height: 250px;
+
+        &__nav,
+        &__link {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 150%;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .title-block {
+        height: 345px;
+
+        &__title {
+            font-size: 50px;
+            line-height: 64px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .title-block {
+        height: 445px;
+    }
+}

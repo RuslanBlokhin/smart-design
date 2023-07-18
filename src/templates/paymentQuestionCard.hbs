@@ -1,0 +1,19 @@
+<li class='payment__question-item'>
+    <div class='payment__question-title'>
+        <div class='payment__question-title-dot'></div>
+        <h3 class='payment__question-title-text'>{{question}}</h3>
+    </div>
+    {{#if descriptionLarge}}
+        <div class='payment__question-description'>{{descriptionLarge}}</div>
+    {{else}}
+        <div class='payment__question-description'>{{description}}</div>
+        <div class='payment__question-images'>
+            <div class='payment__question-image'></div>
+            <div class='payment__question-image'></div>
+        </div>
+    {{/if}}
+    {{#if descriptionAddition}}
+        <div class='payment__question-description addition'>{{description}}</div>
+        <div class='payment__question-description'>{{description}}</div>
+    {{/if}}
+</li>

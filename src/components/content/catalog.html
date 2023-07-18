@@ -1,0 +1,82 @@
+<main class="catalog">
+    <div id="catalog-cover">
+        <div class="catalog__cover">
+            <h1 class="catalog__cover-title">Каталог товаров (письменные пренаджлежности)</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div id="main-block" class="catalog__main-block">
+            <div class="catalog__title-block">
+                <h2 id="catalog-title" class="catalog__title">КАТАЛОГ</h2>
+            </div>
+            <div class="catalog__filters-block">
+                <div id="filters-desktop" class="catalog__filters-desktop">
+                    <include src="components/filters/priceFilters.html"></include>
+                </div>
+                <div class="catalog__mobile-filters-block">
+                    <button id="mobile-filters-open-btn" type="button" class="catalog__filters">
+                        <include src="components/ui-kit/filter.html"></include>
+                        <span class="catalog__filters-text">Фильтры</span>
+                    </button>
+                    <include src="components/filters/mobileFilters.html"></include>
+                </div>
+                <button type="button" class="catalog__sorting">
+                    <span class="catalog__filters-text">Бестселлеры</span>
+                    <div class="icon-wrapper">
+                        <include src="icons/catalog/sortingLogo.html"></include>
+                    </div>
+                </button>
+            </div>
+            <h2 class="catalog__title-tablet">Каталог товаров</h2>
+            <ul id="catalog-products-list" class="catalog__products"></ul>
+            <include src="components/pagination.html"></include>
+        </div>
+        <div id="search-block" class="catalog__search-block" hidden>
+            <h2 id="catalog-search-title" class="catalog__title-articles">
+                Товары по запросу (<span class="search-value"></span>)
+            </h2>
+            <div class="catalog__filters-block">
+                <button type="button" class="catalog__filters">
+                    <include src="components/ui-kit/filter.html"></include>
+                    <span class="catalog__filters-text">Фильтры</span>
+                </button>
+                <button type="button" class="catalog__sorting">
+                    <span class="catalog__filters-text">Бестселлеры</span>
+                    <div class="icon-wrapper">
+                        <include src="icons/catalog/sortingLogo.html"></include>
+                    </div>
+                </button>
+            </div>
+            <ul id="search-block-list" class="catalog__products catalog__search-block-list"></ul>
+            <div id="catalog-show-more-btn">
+                <button type="button" class="catalog__show-more-btn btn btn--white">Показать еще</button>
+            </div>
+            <div class="catalog__articles -block">
+                <div class="catalog__articles">
+                    <h2 class="catalog__title-articles">Статьи по запросу (<span class="search-value"></span>)</h2>
+                    <ul id="catalog-articles-list" class="catalog__articles-list"></ul>
+                    <button type="button" class="catalog__show-more-btn btn btn--white">Показать еще</button>
+                </div>
+                <div class="catalog__search-info">
+                    <h2 class="catalog__title-articles">
+                        Иная информация по запросу (<span class="search-value"></span>)
+                    </h2>
+                    <ul id="catalog-search-info-list" class="catalog__search-info-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="notfound-block" class="catalog__notfound-block" hidden>
+        <div class="catalog__notfound-block-wrapper">
+            <h2 class="catalog__title-articles catalog__title-notfound">
+                Результаты поиска (<span class="search-value"></span>)
+            </h2>
+            <p class="catalog__notfound-subtitle">Товары не найдены</p>
+            <p class="catalog__notfound-description">Попробуйте задать другие параметры поиска</p>
+        </div>
+        <include src="components/content/similarProducts.html" locals='{"title": "ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ"}'></include>
+    </div>
+</main>
+<script src="./js/catalog.js" defer type="module"></script>
+<script src="./js/filters.js" defer type="module"></script>
+<script src="./js/main.js" defer type="module"></script>

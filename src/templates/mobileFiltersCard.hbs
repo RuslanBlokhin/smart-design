@@ -1,0 +1,39 @@
+<li class='mobileFilters__card'>
+    <div class='mobileFilters__card-title-block'>
+        <h3 class='mobileFilters__card-title'>{{title}}</h3>
+        <div class='mobileFilters__card-arrow-down'>
+            <svg class='arrowDownLogo' width='11' height='6' viewBox='0 0 11 6' fill='none'>
+                <path
+                    d='M0.769107 0.81995C0.937586 0.623391 1.23351 0.600628 1.43007 0.769107L5.50001 4.25763L9.56995 0.769107C9.76651 0.600628 10.0624 0.623391 10.2309 0.81995C10.3994 1.01651 10.3766 1.31243 10.1801 1.48091L5.80507 5.23091C5.62953 5.38138 5.37049 5.38138 5.19495 5.23091L0.81995 1.48091C0.623391 1.31243 0.600628 1.01651 0.769107 0.81995Z'
+                    fill='#313131'
+                />
+            </svg>
+        </div>
+    </div>
+    <div class='mobileFilters__filters-list-wrapper' hidden>
+        <ul class='mobileFilters__filters-list'>
+            {{#each options}}
+                <li class='mobileFilters__filters-item'>
+                    <label class='mobileFilters__filters-label'>
+                        <input type='checkbox' name='mobile-filter' class='mobileFilters__filters-input' />
+                        <div class='mobileFilters__filters-checkbox {{this.class}}'>
+                            {{#if this.color}}
+                                <div
+                                    class='mobileFilters__filters-color'
+                                    style='background-color: {{this.color}};'
+                                ></div>
+                            {{/if}}
+                            <div class='mobileFilters__filters-description'>
+                                {{#if this.name}}
+                                    {{this.name}}
+                                {{else}}
+                                    {{this}}
+                                {{/if}}
+                            </div>
+                        </div>
+                    </label>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</li>

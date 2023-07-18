@@ -1,0 +1,272 @@
+.header {
+    min-width: 375px;
+    position: relative;
+    margin: 0 auto;
+    height: 96px;
+    background-color: #fff;
+
+    &__container {
+        width: 100%;
+        height: inherit;
+        position: fixed;
+        top: 0;
+        padding: 12px 10px;
+        background-color: #fff;
+        z-index: 5;
+    }
+
+    .logotype {
+        width: 45px;
+        height: 10px;
+    }
+
+    &__main-block {
+        position: relative;
+        @include fc(space-between);
+        margin-bottom: 14.5px;
+    }
+
+    .searchLogo {
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+
+    &__search-block {
+        @include fc(space-between);
+        position: relative;
+    }
+
+    &__search-input {
+        padding: 8px 0 8px 26px;
+        height: 40px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+
+        &::placeholder {
+            color: #929292;
+        }
+    }
+
+    &__search-button {
+        padding: 9px 12px;
+        height: 40px;
+        &.btn {
+            border-radius: 0;
+        }
+    }
+
+    .icon-wrapper {
+        height: 20px;
+        cursor: pointer;
+    }
+
+    &__basket-icon {
+        @include fc(center);
+    }
+
+    &__navigation,
+    &__icon640,
+    &__city,
+    &__basket-icon1920 {
+        display: none;
+    }
+
+    .logoMain__title {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .header {
+        height: 80px;
+        z-index: 4;
+
+        .logotype {
+            height: 12px;
+        }
+
+        &__container {
+            padding: 30px 20px;
+        }
+
+        &__main-block {
+            margin-bottom: 0;
+        }
+
+        &__search-block {
+            display: none;
+        }
+
+        &__icons-block {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .searchLogo {
+            position: static;
+        }
+
+        .menuLogo {
+            width: 27px;
+            height: 10px;
+        }
+
+        &__icon640 {
+            @include fc(center);
+        }
+
+        .logoMain {
+            margin-left: 60px;
+        }
+
+        .logoMain__title {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .header {
+        .logoMain__title {
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    .header {
+        @include fc(center);
+        margin: 0 auto;
+        height: 100px;
+
+        .header__basket-icon1920 {
+            @include fc(center);
+        }
+
+        .logoMain {
+            margin-left: 0;
+            position: absolute;
+            left: 50%;
+            margin-left: -102px;
+            gap: 5px;
+        }
+
+        &__container {
+            width: 100%;
+            padding: 0 20px;
+            border: none;
+        }
+
+        &__wrapper {
+            min-width: 1270px;
+            margin: 0 auto;
+            border-bottom: 1px solid #ededed;
+        }
+
+        &__main-block {
+            padding: 34px 0;
+        }
+
+        .logotype {
+            height: 15px;
+        }
+
+        .icon-wrapper {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__navigation {
+            display: block;
+        }
+
+        &__site-nav {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__site-nave-link {
+            position: relative;
+            font-size: 18px;
+
+            &::after {
+                display: none;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                &::after {
+                    transition: all 100ms ease-in;
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--primary-text-color);
+                }
+            }
+        }
+
+        &__menu-icon {
+            display: none;
+        }
+
+        .logoMain__title {
+            font-size: 24px;
+            line-height: 31px;
+        }
+
+        &__city {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+
+        &__city-location {
+            height: 20px;
+        }
+
+        &__city-name {
+            font-size: 17px;
+        }
+
+        &__city-location-arrow {
+            width: 16px;
+            height: 16px;
+        }
+
+        &__icons-block {
+            gap: 15px;
+        }
+
+        &__basket-icon1920 {
+            display: block;
+        }
+
+        &__basket-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header {
+        &__wrapper {
+            max-width: 1820px;
+        }
+    }
+}

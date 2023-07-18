@@ -1,0 +1,26 @@
+<main class="faq">
+    <include src="components/titleBlock.html" locals='{ "title": "Вопросы и ответы"}'></include>
+    <div class="container">
+        <div class="faq__title-block-desktop">
+            <h2 class="title-block__title">Вопросы и ответы</h2>
+            <div class="title-block__nav">
+                <a href="index.html" class="title-block__link">Главная</a> / Вопросы и ответы
+            </div>
+        </div>
+        <div class="faq__nav">
+            <buton id="1" type="button" class="faq__nav-item btn active">Основные вопросы</buton>
+            <buton id="2" type="button" class="faq__nav-item btn">Доставка и оплата</buton>
+            <buton id="3" type="button" class="faq__nav-item btn">Возврат</buton>
+            <buton id="4" type="button" class="faq__nav-item btn">Пункты выдачи</buton>
+        </div>
+        <ul id="faq-list" class="faq__list"></ul>
+        <div class="faq__question-block">
+            <h2 class="faq__question-title">Не нашли ответ ?</h2>
+            <div class="faq__question-description-desktop">Воспользуйтесь формой обратной связи</div>
+            <div class="faq__question-description">Оставьте свои данные и напишите вопрос в поле ниже</div>
+            <include src="components/questionForm.html"></include>
+        </div>
+    </div>
+</main>
+<script src="./js/faq.js" type="module" defer></script>
+<script src="./js/main.js" type="module" defer></script>

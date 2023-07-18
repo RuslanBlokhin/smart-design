@@ -1,0 +1,31 @@
+.logoMain {
+    .logotype {
+        width: 45px;
+        height: 10px;
+    }
+
+    &__link {
+        @include fc(center);
+        gap: 3px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .logoMain {
+        .logotype {
+            height: 12px;
+        }
+
+        &__link {
+            gap: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1290px) {
+    .logoMain {
+        .logotype {
+            height: 15px;
+        }
+    }
+}

@@ -1,0 +1,202 @@
+<main id="basket" class="basket">
+    <div id="basket-title-block" class="basket__title-block">
+        <include src="components/titleBlock.html" locals='{ "title": "Корзина"}'></include>
+    </div>
+    <div class="container">
+        <div class="basket__section-wrapper">
+            <section id="basket-products-block" class="basket__basket-block">
+                <div class="basket__empty" hidden>
+                    <div class="basket__empty-logo">
+                        <include src="icons/header/basketLogo.html" />
+                    </div>
+                    <p class="basket__empty-text">Ваша корзина пуста</p>
+                    <a href="catalog.html" class="basket__button btn btn-black">Перейти в каталог</a>
+                </div>
+                <div class="basket__products">
+                    <div class="basket__product-desc">
+                        <div class="basket__product-desc-products">Товары</div>
+                        <div class="basket__product-desc-price">Цена</div>
+                        <div class="basket__product-desc-quantity">Кол-во</div>
+                        <div class="basket__product-desc-cost">Стоимость</div>
+                    </div>
+                    <ul id="basket-products-list" class="basket__products-list"></ul>
+                </div>
+                <div id="order-top" class="basket__order basket__order-top">
+                    <h2 class="basket__order-title">Ваш заказ</h2>
+                    <div class="basket__order-wrapper">
+                        <div class="basket__order-products products">
+                            <span class="basket__order-products-text">Товары</span>
+                            <span class="basket__order-products-text">699.99 ₽</span>
+                        </div>
+                        <div class="basket__order-products">
+                            <span class="basket__order-products-text">Доставка</span>
+                            <span class="basket__order-products-text">699.99 ₽</span>
+                        </div>
+                    </div>
+                    <div class="basket__order-products total">
+                        <span class="basket__order-products-text">Итого</span>
+                        <span class="basket__order-products-text total">699.99 ₽</span>
+                    </div>
+                    <div class="basket__order-payments-logo">
+                        <include src="icons/basket/paymentsLogo.html" />
+                    </div>
+                    <div id="to-payment-button-wrapper1920" class="basket__button-wrapper" hidden>
+                        <button
+                            id="to-payment-button"
+                            type="submit"
+                            class="basket__order-processing-button btn btn--black"
+                        >
+                            Перейти к оплате
+                        </button>
+                    </div>
+                    <div id="order-processing-button-wrapper1920" class="basket__button-wrapper">
+                        <button type="button" class="basket__order-processing-button btn btn--black">
+                            Оформить заказ
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="basket-processing-block" class="basket__processing" hidden>
+                <form class="basket__form">
+                    <h2 class="basket__form-title">Данные получателя</h2>
+                    <div class="basket__form-usedata">
+                        <label class="checkbox__label">
+                            <input name="use-data" type="checkbox" class="checkbox__input" />
+                            <div class="checkbox__checkbox"><div class="checkbox__checkbox-inner"></div></div>
+                            <p class="checkbox__description basket__form-usedata-description">
+                                Использовать мои данные из личного кабинета
+                            </p>
+                        </label>
+                    </div>
+                    <ul class="basket__recipient-data-form">
+                        <div class="basket__form-item-wrapper">
+                            <li class="basket__form-item">
+                                <h3 class="basket__form-input-title">
+                                    Имя
+                                    <span class="basket__form-input-redstart">*</span>
+                                </h3>
+                                <input name="first-name" class="basket__form-input-text input input-required" />
+                            </li>
+                            <li class="basket__form-item">
+                                <h3 class="basket__form-input-title">
+                                    Фамилия
+                                    <span class="basket__form-input-redstart">*</span>
+                                </h3>
+                                <input name="last-name" class="basket__form-input-text input input-required" />
+                            </li>
+                        </div>
+                        <div class="basket__form-item-wrapper">
+                            <li class="basket__form-item">
+                                <h3 class="basket__form-input-title">
+                                    Телефон
+                                    <span class="basket__form-input-redstart">*</span>
+                                </h3>
+                                <input name="phone" class="basket__form-input-text input input-required" />
+                            </li>
+                            <li class="basket__form-item">
+                                <h3 class="basket__form-input-title">
+                                    Email
+                                    <span class="basket__form-input-redstart">*</span>
+                                </h3>
+                                <input name="email" class="basket__form-input-text input input-required" />
+                            </li>
+                        </div>
+                    </ul>
+                </form>
+                <div class="basket__order-details-wrapper">
+                    <div class="basket__order-details-block">
+                        <div class="basket__order-details">
+                            <h2 class="basket__order-details-title">Детали доставки</h2>
+                            <p class="basket__order-details-subtitle">Выберите курьерскую службу</p>
+                            <include src="components/courierService.html"></include>
+                        </div>
+                        <div class="basket__order-delivery">
+                            <h2 class="basket__order-delivery-title">Куда доставить заказ?</h2>
+                            <p class="basket__order-delivery-subtitle">Выберите тип доставки</p>
+                            <include src="components/deliveryMethod.html"></include>
+                        </div>
+                    </div>
+                    <div id="order-block" class="basket__order" hidden>
+                        <h2 class="basket__order-title">Ваш заказ</h2>
+                        <div class="basket__order-wrapper">
+                            <div class="basket__order-products products">
+                                <span class="basket__order-products-text">Товары</span>
+                                <span class="basket__order-products-text">699.99 ₽</span>
+                            </div>
+                            <div class="basket__order-products">
+                                <span class="basket__order-products-text">Доставка</span>
+                                <span class="basket__order-products-text">699.99 ₽</span>
+                            </div>
+                        </div>
+                        <div class="basket__order-products total">
+                            <span class="basket__order-products-text">Итого</span>
+                            <span class="basket__order-products-text total">699.99 ₽</span>
+                        </div>
+                        <div class="basket__order-payments-logo">
+                            <include src="icons/basket/paymentsLogo.html" />
+                        </div>
+                        <div class="basket__button-wrapper">
+                            <button
+                                id="to-payment-button"
+                                type="submit"
+                                class="basket__order-processing-button btn btn--black"
+                            >
+                                Перейти к оплате
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__order-delivery-map-wrapper">
+                    <div class="basket__order-delivery-map-address">
+                        <h3 class="basket__order-delivery-map-title">Укажите адрес</h3>
+                        <input class="basket__order-delivery-map-input input" />
+                    </div>
+                    <div class="basket__order-delivery-map">
+                        <img src="./images/basket/map.png" alt="Карта" class="basket__order-delivery-map-image" />
+                    </div>
+                    <label class="checkbox__label basket__order-delivery-map-label">
+                        <input name="save-personal-data" type="checkbox" class="checkbox__input" checked />
+                        <div class="checkbox__checkbox basket__order-delivery-map-checkbox">
+                            <div class="checkbox__checkbox-inner"></div>
+                        </div>
+                        <p class="checkbox__description basket__order-delivery-map-description">
+                            Сохранить данные в личном кабинете
+                        </p>
+                    </label>
+                </div>
+                <div class="basket__order-comments">
+                    <h3 class="basket__order-comments-title">Комментарий к заказу</h3>
+                    <textarea class="basket__order-comments-text textarea"></textarea>
+                </div>
+            </section>
+        </div>
+        <section id="order-bottom" class="basket__order basket__order-bottom">
+            <h2 class="basket__order-title">Ваш заказ</h2>
+            <div class="basket__order-wrapper">
+                <div class="basket__order-products products">
+                    <span class="basket__order-products-text">Товары</span>
+                    <span class="basket__order-products-text">699.99 ₽</span>
+                </div>
+                <div class="basket__order-products">
+                    <span class="basket__order-products-text">Доставка</span>
+                    <span class="basket__order-products-text">699.99 ₽</span>
+                </div>
+            </div>
+            <div class="basket__order-products total">
+                <span class="basket__order-products-text">Итого</span>
+                <span class="basket__order-products-text total">699.99 ₽</span>
+            </div>
+            <div class="basket__order-payments-logo">
+                <include src="icons/basket/paymentsLogo.html" />
+            </div>
+            <div id="to-payment-button-wrapper" class="basket__button-wrapper" hidden>
+                <button type="submit" class="basket__order-processing-button btn btn--black">Перейти к оплате</button>
+            </div>
+            <div id="order-processing-button-wrapper" class="basket__button-wrapper">
+                <button type="button" class="basket__order-processing-button btn btn--black">Оформить заказ</button>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="./js/main.js" defer type="module"></script>
+<script src="./js/basket.js" defer type="module"></script>

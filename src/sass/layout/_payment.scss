@@ -1,0 +1,126 @@
+.payment {
+    .container {
+        padding: 30px 10px;
+    }
+    &__question-item {
+        &:nth-child(6),
+        &:last-child {
+            display: none;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    &__question-title {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    &__question-title-dot {
+        min-width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--primary-text-color);
+    }
+    &__question-description {
+        margin-bottom: 20px;
+        color: #9b9b9b;
+
+        &.addition {
+            margin-top: 20px;
+        }
+    }
+    &__question-image {
+        width: 100%;
+        height: auto;
+        min-width: 355px;
+        min-height: 250px;
+        background-color: #f5f5f5;
+
+        &:last-child {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .payment {
+        .container {
+            max-width: 845px;
+            margin: 0 auto;
+            padding: 60px 10px;
+        }
+        &__question-item {
+            &:not(:last-child) {
+                margin-bottom: 60px;
+            }
+        }
+        &__question-title-text {
+            font-size: 30px;
+            line-height: 120%;
+            letter-spacing: -0.3px;
+        }
+        &__question-description {
+            font-size: 17px;
+            line-height: 160%;
+
+            &.addition {
+                margin-top: 30px;
+            }
+        }
+        &__question-images {
+            @include fc(center);
+            gap: 20px;
+        }
+        &__question-image {
+            min-width: 300px;
+            min-height: 250px;
+
+            &:last-child {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .payment {
+        .container {
+            width: 845px;
+            max-width: none;
+            min-width: 0;
+            padding: 60px 0;
+        }
+        &__question-item {
+            &:nth-child(6),
+            &:last-child {
+                display: block;
+            }
+            &:not(:last-child) {
+                margin-bottom: 60px;
+            }
+        }
+        &__question-description {
+            font-size: 20px;
+            line-height: 150%;
+        }
+        &__question-images {
+            gap: 45px;
+        }
+        &__question-image {
+            min-width: 400px;
+            min-height: 350px;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .payment {
+        .container {
+            padding: 153px 0 202px;
+        }
+    }
+}

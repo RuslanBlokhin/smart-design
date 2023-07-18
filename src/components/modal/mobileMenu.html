@@ -1,0 +1,72 @@
+<div id="underlay" class="underlay" hidden>
+    <div class="modal">
+        <div id="modal-main-block" class="modal__main-block">
+            <div class="modal__title-block">
+                <h2 class="modal__title">ТОВАРЫ</h2>
+                <button id="close-icon" type="button" class="modal__close-button btn">
+                    <include src="icons/crossLogo.html"></include>
+                </button>
+            </div>
+            <ul id="mobile-menu-main-list" class="modal__list main-list"></ul>
+            <div class="modal__buttons-block">
+                <button id="modal-reset-btn" type="button" class="modal__reset-button btn btn--white">Сбросить</button>
+                <button id="modal-show-btn" type="button" class="modal__show-button btn btn--black">Показать</button>
+            </div>
+            <div class="modal__low-list-wrapper">
+                <ul class="modal__low-list">
+                    <li class="modal__item main-block-item">
+                        <button type="button" class="modal__item-button btn">
+                            <div class="modal__item-text">Компания</div>
+                            <div class="modal__icon-wrapper">
+                                <include src="icons/arrowRightLogo.html"></include>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="modal__item low-item">
+                        <button type="button" class="modal__item-button low-item btn">
+                            <div class="modal__icon-wrapper low-icon">
+                                <include src="icons/header/locationLogo.html"></include>
+                            </div>
+                            <div class="modal__item-text">Ваш город</div>
+                        </button>
+                    </li>
+                    <li class="modal__item">
+                        <button type="button" class="modal__item-button low-item btn">
+                            <a href="auth.html" class="modal__icon-button-link">
+                                <div href="auth.html" class="modal__icon-wrapper low-icon btn">
+                                    <include src="icons/header/humanLogo.html"></include>
+                                </div>
+                                <div class="modal__item-text">Вход/Регистрация</div>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-secondary-block" class="modal__secondary-block" hidden>
+            <div class="modal__controls">
+                <button id="mobile-menu-back-btn" type="button" class="modal__back-btn-block btn">
+                    <div class="modal__arrow-wrapper">
+                        <include src="icons/header/arrowLeftLogoMin.html"></include>
+                    </div>
+                    <span class="modal__back-btn-text">Назад</span>
+                </button>
+                <div id="mobile-menu-clear-btn-wrapper">
+                    <button id="mobile-menu-clear-btn" class="btn">Очистить</button>
+                </div>
+                <div id="mobile-menu-close-btn-wrapper" hidden>
+                    <button id="close-icon" type="button" class="modal__close-button btn">
+                        <include src="icons/crossLogo.html"></include>
+                    </button>
+                </div>
+            </div>
+            <ul class="modal__secondary-block-list" id="modal-secondary-block-list"></ul>
+            <ul id="modal-submenu" class="modal__submenu" hidden></ul>
+            <div id="mobile-menu-accept-btn-wrapper" class="modal__accept-btn-wrapper">
+                <button id="mobile-menu-accept-btn" type="button" class="modal__accept-btn btn btn--black">
+                    Применить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

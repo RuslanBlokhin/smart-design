@@ -1,0 +1,72 @@
+<div id='{{id}}' class='filter-desktop'>
+    <div class='filter-desktop__title'>
+        <div class='filter-desktop__title-name'>
+            <div class='filter-desktop__title-checkboxes-quantity-wrapper'>
+                {{title}}
+                <span class='filter-desktop__title-checkboxes-quantity'></span>
+            </div>
+            <div class='filter-desktop__title-colors'></div>
+        </div>
+        <div class='filter-desktop__title-icon'>
+            <div class='filter-desktop__arrow-icon'>
+                <svg class='arrowDownLogo' width='16' height='8' viewBox='0 0 16 8' fill='none'>
+                    <path
+                        d='M0.430571 0.51192C0.700138 0.197426 1.17361 0.161005 1.48811 0.430571L8.00001 6.01221L14.5119 0.430572C14.8264 0.161005 15.2999 0.197426 15.5695 0.511921C15.839 0.826415 15.8026 1.29989 15.4881 1.56946L8.48811 7.56946C8.20724 7.8102 7.79279 7.8102 7.51192 7.56946L0.51192 1.56946C0.197426 1.29989 0.161005 0.826414 0.430571 0.51192Z'
+                        fill='#313131'
+                    />
+                </svg>
+            </div>
+            <div class='filter-desktop__cross-icon' hidden>
+                <svg class='crossLogo' width='16' height='16' viewBox='0 0 16 16' fill='none'>
+                    <path
+                        d='M2.84435 2.84315L8.50121 8.5M14.1581 14.1569L8.50121 8.5M8.50121 8.5L2.84435 14.1569L14.1581 2.84315'
+                        stroke='#ffffff'
+                        stroke-width='1.5'
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                    />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <ul class='filter-desktop__options' hidden>
+        {{#each options}}
+            <li class='filter-desktop__option'>
+                <label class='checkbox__label filter-desktop__label'>
+                    {{#if this.name}}
+                        <input
+                            type='checkbox'
+                            name='{{this.name}}'
+                            data-color='{{this.color}}'
+                            class='checkbox__input filter-desktop__input'
+                        />
+                    {{else}}
+                        <input type='checkbox' name='{{this}}' class='checkbox__input filter-desktop__input' />
+                    {{/if}}
+                    <div class='checkbox__checkbox filter-desktop__checkbox'><div
+                            class='checkbox__checkbox-inner'
+                        ></div></div>
+                    {{#if this.color}}
+                        <div
+                            class='filter-desktop__color'
+                            data='{{this.color}}'
+                            style='background-color: {{this.color}};'
+                        ></div>
+                    {{/if}}
+                    {{#if this.name}}
+                        <p class='checkbox__description filter-desktop__description'>
+                            {{this.name}}
+                        </p>
+                    {{else}}
+                        <p class='checkbox__description filter-desktop__description'>
+                            {{this}}
+                        </p>
+                    {{/if}}
+                </label>
+            </li>
+        {{/each}}
+        <li class='filter-desktop__option'>
+            <button type='button' class='filter-desktop__button btn btn--black'>Применить</button>
+        </li>
+    </ul>
+</div>

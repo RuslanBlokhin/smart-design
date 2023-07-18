@@ -1,0 +1,220 @@
+.about {
+    .container {
+        padding: 20px 10px 47px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__contacts-image-wrapper1920,
+    .desktop {
+        display: none;
+    }
+
+    &__title-block {
+        margin-bottom: 30px;
+    }
+
+    &__inner-block {
+        margin-bottom: 60px;
+    }
+
+    &__video {
+        min-width: 375px;
+        height: 210px;
+        margin-bottom: 30px;
+    }
+
+    &__video-wrapper {
+        @include fc(center);
+        width: 100vw;
+        height: 100%;
+        background-color: #f5f5f5;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 12px;
+    }
+
+    &__social-network-icon-wrapper {
+        height: 21px;
+    }
+
+    &__innovative {
+        margin-bottom: 75px;
+    }
+
+    &__innovative-title {
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 1.27;
+        letter-spacing: -0.01em;
+    }
+
+    &__innovative-description {
+        margin-bottom: 30px;
+        color: var(--secondary-text-color);
+    }
+
+    &__social-network {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    &__contacts-text {
+        margin-bottom: 30px;
+        font-size: 17px;
+        line-height: 1.6;
+        color: var(--secondary-text-color);
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .about {
+        .section {
+            padding: 60px 10px;
+        }
+
+        &__video {
+            height: 360px;
+        }
+
+        &__innovative-description {
+            width: 460px;
+        }
+
+        &__contacts-image-wrapper {
+            width: 392px;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .about {
+        .container {
+            max-width: 1345px;
+            margin: 0 auto;
+            padding: 60px 20px 96px;
+        }
+
+        &__title-block {
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+            font-size: 50px;
+            letter-spacing: -0.5px;
+        }
+
+        &__title-description {
+            font-size: 30px;
+            line-height: 120%;
+            letter-spacing: -0.3px;
+        }
+
+        &__innovative-description {
+            font-size: 17px;
+        }
+
+        &__video {
+            margin-bottom: 140px;
+            height: 550px;
+        }
+
+        &__video-wrapper {
+            left: -20px;
+        }
+
+        &__inner-block {
+            gap: 20px;
+
+            &:nth-child(even) {
+                @include fc(flex-start);
+                flex-direction: row-reverse;
+            }
+            &:nth-child(odd) {
+                @include fc(flex-end);
+            }
+        }
+
+        &__innovative-image-wrapper,
+        &__contacts-image-wrapper {
+            min-width: 460px;
+            width: 50%;
+        }
+
+        &__contacts-text,
+        &__innovative-info-block {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .about {
+        .container {
+            width: 1345px;
+            margin: 0 auto;
+            padding: 219px 0 180px;
+        }
+
+        &__title-block {
+            margin-bottom: 219px;
+        }
+
+        &__video {
+            margin-bottom: 150px;
+            height: 849px;
+        }
+
+        &__video-wrapper {
+            width: 100%;
+            left: 0;
+        }
+
+        &__innovative {
+            gap: 120px;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        &__contacts-image-wrapper1920 {
+            display: block;
+            min-width: 640px;
+        }
+
+        &__contacts {
+            justify-content: flex-end;
+        }
+
+        &__contacts-text {
+            margin-left: 225px;
+        }
+
+        &__innovative {
+            margin-bottom: 90px;
+        }
+
+        &__inner-block {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            &:not(:last-child) {
+                margin-bottom: 90px;
+            }
+            &:nth-child(even) {
+                gap: 120px;
+            }
+            &:nth-child(odd) {
+                gap: 20px;
+            }
+        }
+    }
+}

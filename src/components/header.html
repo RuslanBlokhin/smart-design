@@ -1,0 +1,67 @@
+<header class="header">
+    <include src="components/modal/mobileMenu.html"></include>
+    <include src="components/modal/searchModal.html"></include>
+    <include src="components/modal/basketModal.html"></include>
+    <include src="components/informer/informerSuccess.html"></include>
+    <div class="header__container">
+        <div class="header__wrapper">
+            <div class="header__main-block">
+                <nav class="header__navigation">
+                    <ul class="header__site-nav">
+                        <li class="header__site-nav-item">
+                            <button id="desktop-menu-open" type="button" class="header__site-nave-link btn">
+                                Продукты
+                            </button>
+                        </li>
+                        <li class="header__site-nav-item">
+                            <a href="about.html" class="header__site-nave-link">О компании</a>
+                        </li>
+                        <li class="header__site-nav-item">
+                            <a href="payment.html" class="header__site-nave-link">Оплата</a>
+                        </li>
+                        <li class="header__site-nav-item">
+                            <a href="faq.html" class="header__site-nave-link">FAQ</a>
+                        </li>
+                        <li class="header__site-nav-item">
+                            <a href="#" class="header__site-nave-link">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="menu-icon" class="header__menu-icon icon-wrapper">
+                    <include src="icons/header/menuLogo.html"></include>
+                </div>
+                <include src="components/logo.html"></include>
+                <div id="header-icons-block" class="header__icons-block">
+                    <div class="header__city">
+                        <div class="header__city-location">
+                            <include src="icons/header/locationLogo.html" />
+                        </div>
+                        <div class="header__city-name">Москва</div>
+                        <div class="header__city-location-arrow">
+                            <include src="icons/header/arrowDownBlackLogo.html" />
+                        </div>
+                    </div>
+                    <button id="search-btn" type="button" class="header__icon640 icon-wrapper btn">
+                        <include src="icons/header/searchLogo.html"></include>
+                    </button>
+                    <button id="basket-button" type="button" class="icon-wrapper header__basket-icon1920 btn">
+                        <include src="icons/header/basketLogo.html"></include>
+                    </button>
+                    <a href="basket.html" class="icon-wrapper header__basket-icon">
+                        <include src="icons/header/basketLogo.html"></include>
+                    </a>
+                    <a href="auth.html" class="header__icon640 icon-wrapper">
+                        <include src="icons/header/humanLogo.html"></include>
+                    </a>
+                </div>
+            </div>
+            <div class="header__search-block">
+                <include src="icons/header/searchLogo.html"></include>
+                <input id="search-input" type="text" class="header__search-input" placeholder="Поиск" />
+                <button id="search" type="button" class="header__search-button btn btn--black">Найти</button>
+            </div>
+        </div>
+    </div>
+</header>
+<link rel="stylesheet" href="sass/index.scss" />
+<include src="components/modal/desktopMenu.html"></include>

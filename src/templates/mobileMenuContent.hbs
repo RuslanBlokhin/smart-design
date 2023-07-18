@@ -1,0 +1,82 @@
+<li class='modal__secondary-block-item' hidden>
+    <h2 class='modal__title'>{{title}}</h2>
+    <ul class='modal__list secondary-list'>
+        {{#if link}}
+            {{#each list}}
+                <li class='modal__item'>
+                    <a href='{{this.href}}' class='modal__item-button'>
+                        <div class='modal__item-text'>{{this.name}}</div>
+                        <div class='modal__icon-wrapper'>
+                            <svg
+                                class='arrowRightLogo'
+                                width='16'
+                                height='16'
+                                viewBox='0 0 16 16'
+                                fill='none'
+                                xmlns='http://www.w3.org/2000/svg'
+                            >
+                                <path
+                                    fill-rule='evenodd'
+                                    clip-rule='evenodd'
+                                    d='M5.81995 3.2691C6.01651 3.10062 6.31243 3.12338 6.48091 3.31994L10.2309 7.69494C10.3814 7.87048 10.3814 8.12952 10.2309 8.30506L6.48091 12.6801C6.31243 12.8766 6.01651 12.8994 5.81995 12.7309C5.62339 12.5624 5.60063 12.2665 5.76911 12.0699L9.25763 8L5.76911 3.93006C5.60063 3.7335 5.62339 3.43758 5.81995 3.2691Z'
+                                    fill='#313131'
+                                />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+            {{/each}}
+        {{else}}
+            {{#each list}}
+                <li class='modal__item {{this.class}}'>
+                    <label class='modal__item-button'>
+                        {{#if this.name}}
+                            <div class='modal__item-text'>{{this.name}}</div>
+                        {{else}}
+                            <div class='modal__item-text'>{{this}}</div>
+                        {{/if}}
+                        <input type='checkbox' name='check-block' class='modal__item-input' />
+                        {{#if this.submenu}}
+                            <div class='modal__icon-wrapper'>
+                                <svg
+                                    class='arrowRightLogo'
+                                    width='16'
+                                    height='16'
+                                    viewBox='0 0 16 16'
+                                    fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                >
+                                    <path
+                                        fill-rule='evenodd'
+                                        clip-rule='evenodd'
+                                        d='M5.81995 3.2691C6.01651 3.10062 6.31243 3.12338 6.48091 3.31994L10.2309 7.69494C10.3814 7.87048 10.3814 8.12952 10.2309 8.30506L6.48091 12.6801C6.31243 12.8766 6.01651 12.8994 5.81995 12.7309C5.62339 12.5624 5.60063 12.2665 5.76911 12.0699L9.25763 8L5.76911 3.93006C5.60063 3.7335 5.62339 3.43758 5.81995 3.2691Z'
+                                        fill='#313131'
+                                    />
+                                </svg>
+                            </div>
+                        {{else}}
+                            <div class='modal__checkbox-wrapper'>
+                                <svg
+                                    class='checkLogo'
+                                    width='9'
+                                    height='6'
+                                    viewBox='0 0 9 6'
+                                    fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                >
+                                    <path
+                                        fill-rule='evenodd'
+                                        clip-rule='evenodd'
+                                        d='M0.739907 2.32879C0.92311 2.11505 1.24489 2.0903 1.45863 2.2735L3.80949 4.56817L7.5445 0.373452C7.75823 0.190249 8.08002 0.215002 8.26322 0.428738C8.44642 0.642475 8.42167 0.964257 8.20793 1.14746L4.14121 5.62651C3.95033 5.79012 3.66866 5.79012 3.47777 5.62651L0.795193 3.04751C0.581457 2.86431 0.556705 2.54253 0.739907 2.32879Z'
+                                        fill='#313131'
+                                    />
+                                </svg>
+                            </div>
+                        {{/if}}
+                    </label>
+                    <span id='modal-item-desription' class='modal__item-description'></span>
+                </li>
+            {{/each}}
+        {{/if}}
+    </ul>
+</li>

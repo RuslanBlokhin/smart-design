@@ -1,0 +1,35 @@
+<main class="contacts">
+    <include src="components/titleBlock.html" locals='{ "title": "Контакты и обратная связь"}'></include>
+    <div class="container">
+        <div class="contacts__contacts-block">
+            <h2 class="contacts__contacts-title">Контакты</h2>
+            <ul class="contacts__contacts-list">
+                <li class="contacts__contacts-item">
+                    <div class="contacts__contacts-icon">
+                        <include src="icons/contacts/officeLogo.html"></include>
+                    </div>
+                    <div class="contacts__contacts-text">
+                        "РФ, г. Москва, ул. Шумкина, 11А, офис ООО "Смарт Дизайн"
+                    </div>
+                </li>
+                <li class="contacts__contacts-item">
+                    <div class="contacts__contacts-icon">
+                        <include src="icons/contacts/emailLogo.html"></include>
+                    </div>
+                    <a href="mailto:info@smartdesign.com" class="contacts__contacts-text">info@sdoffice.ru</a>
+                </li>
+                <li class="contacts__contacts-item">
+                    <div class="contacts__contacts-icon">
+                        <include src="icons/contacts/phoneLogo.html"></include>
+                    </div>
+                    <a href="tel:74994508890" class="contacts__contacts-text">+7 495 287 45 79</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts__question-block">
+            <h2 class="contacts__contacts-title">Какой у вас вопрос ?</h2>
+            <include src="components/questionForm.html"></include>
+        </div>
+    </div>
+</main>
+<script src="./js/main.js" type="module" defer></script>

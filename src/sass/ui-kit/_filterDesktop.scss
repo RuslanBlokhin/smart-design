@@ -1,0 +1,139 @@
+.filter-desktop {
+    position: relative;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 18px;
+        border: 1px solid #e8e8e8;
+        border-radius: 2px;
+        transition: border-color 100ms ease-in;
+        cursor: pointer;
+
+        &.active {
+            border-color: var(--primary-text-color);
+        }
+
+        &.checked {
+            color: #fff;
+            background-color: var(--primary-text-color);
+        }
+    }
+    &__title-name {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 21px;
+
+        &.open {
+            gap: 10px;
+        }
+    }
+    &__title-icon {
+        @include fc(center);
+        width: 24px;
+        height: 24px;
+    }
+    &__title-checkboxes-quantity {
+        &.active {
+            position: relative;
+            bottom: 2px;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 1.3;
+        }
+    }
+    &__cross-icon {
+        height: 16px;
+        cursor: pointer;
+    }
+    &__arrow-icon {
+        transition: all 100ms ease-in;
+
+        &.rotate {
+            transform: rotate(180deg);
+        }
+    }
+    &__title-colors {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    &__title-color {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+    }
+    &__options {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 393px;
+        padding: 20px 25px;
+        background-color: #fff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        z-index: 3;
+    }
+    &__option {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__button {
+        width: 100%;
+        height: 49px;
+    }
+    .checkbox__label {
+        align-items: center;
+        gap: 10px;
+    }
+    .checkbox__checkbox {
+        padding: 6.5px 6px;
+        margin-right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid var(--primary-text-color);
+
+        &:after {
+            width: 10px;
+            height: 9px;
+        }
+    }
+    .checkbox__description {
+        font-size: 15px;
+        line-height: 170%;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+    }
+
+    &__color {
+        display: none;
+    }
+
+    &:last-child {
+        .filter-desktop__color {
+            display: block;
+            width: 22px;
+            height: 22px;
+            border-radius: 2px;
+        }
+
+        .filter-desktop__option {
+            &:first-child {
+                .filter-desktop__color {
+                    border: 1px solid var(--primary-text-color);
+                }
+            }
+        }
+    }
+
+    .crossLogo {
+        path {
+            stroke: #fff;
+        }
+    }
+}

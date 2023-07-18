@@ -1,0 +1,851 @@
+.main {
+    &__wrapper {
+        position: relative;
+        margin-bottom: 60px;
+    }
+    &__carousel {
+        min-width: 375px;
+    }
+    &__carousel-item {
+        @include fc(flex-start);
+        height: 265px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    &__luxury-item {
+        justify-content: center;
+        background-image: url(../images/main/cover/cover1.png);
+    }
+    &__luxury-item-title {
+        width: 340px;
+        margin: 0 auto;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 25px;
+        color: #fff;
+        text-align: center;
+    }
+    &__rhodia-item {
+        background-image: url(../images/main/cover/cover2.png);
+    }
+    &__rhodia-block {
+        width: 300px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: #fff;
+    }
+    &__rhodia-text {
+        font-weight: 300;
+        line-height: 1.7;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+    &__catalog-link {
+        @include fc(center);
+        width: 150px;
+        height: 40px;
+        border: 1px solid var(--primary-text-color);
+        border-radius: 2px;
+        font-size: 12px;
+    }
+    &__want-item {
+        padding-left: 10px;
+        color: #fff;
+        background-image: url(../images/main/cover/cover3.png);
+    }
+    &__store {
+        font-size: 13px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+    &__want-text {
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    &__product-link {
+        @include fc(center);
+        width: 130px;
+        height: 30px;
+        font-size: 12px;
+        color: #fff;
+        border: 1px solid #ffffff;
+        border-radius: 3px;
+    }
+    &__design-item,
+    &__design-item2 {
+        align-items: flex-end;
+        padding: 0 0 20px 20px;
+        background-image: url(../images/main/cover/cover3.png);
+    }
+    &__design-item2 {
+        background-image: url(../images/main/cover/cover4.png);
+    }
+    &__design-block {
+        width: 40%;
+    }
+    &__design-text {
+        font-size: 20px;
+        line-height: 27px;
+        color: #ffffff;
+    }
+    &__design-link {
+        padding-bottom: 2px;
+        font-size: 12px;
+        line-height: 1.6;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    &__controls {
+        display: none;
+    }
+    &__page-controls {
+        display: none;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+        color: #c4b8a5;
+        text-align: center;
+    }
+    &__hit,
+    &__advantages {
+        margin-bottom: 60px;
+    }
+    &__hit-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__hit-gallery-item {
+        display: flex;
+        align-items: stretch;
+        gap: 10px;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        &.desktop {
+            display: none;
+        }
+    }
+    &__hit-gallery-image {
+        width: 50%;
+
+        img {
+            min-height: 190px;
+        }
+    }
+    &__hit-gallery-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 190px;
+        width: 50%;
+        padding: 22px 18.5px;
+        background-color: #fcfbfa;
+    }
+    &__hit-gallery-description-title {
+        position: relative;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: var(--primary-text-color);
+        }
+    }
+    &__hit-gallery-description-text {
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--secondary-text-color);
+    }
+    &__lamy,
+    &__tagline,
+    &__seo {
+        display: none;
+    }
+    .catalog__products-item {
+        &.tablet,
+        &.desktop {
+            display: none;
+        }
+    }
+    &__sale {
+        position: relative;
+        left: -10px;
+        height: 298px;
+        width: 100vw;
+        padding: 10px;
+        border: 1px solid #e8e8e8;
+    }
+    &__sale-wrapper {
+        @include fc(center);
+        flex-direction: column-reverse;
+        height: 278px;
+        min-width: 355px;
+        text-align: center;
+        background-size: contain;
+        background-image: url(../images/main/ad/cover.png);
+    }
+
+    &__sale-image {
+        margin-bottom: 10px;
+        width: 183px;
+        height: 77px;
+    }
+
+    &__sale-title-block {
+        margin-bottom: 40px;
+    }
+    &__sale-title {
+        margin-bottom: 10px;
+    }
+    &__sale-title-desktop {
+        display: none;
+    }
+    &__sale-catalog-link {
+        text-decoration: underline;
+        color: #656565;
+    }
+    &__sale-right-block {
+        display: none;
+    }
+    &__categories-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+    &__categories-item {
+        position: relative;
+        min-width: 172px;
+    }
+    &__categories-item-name {
+        @include fc(center);
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #333;
+        background-color: #e8e8e8;
+    }
+    &__lamy-history {
+        display: none;
+    }
+    &__brands {
+        display: none;
+    }
+    &__advantages {
+        background-color: #f8f8f9;
+        padding: 38px 22px 32px;
+    }
+    &__advantages-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 11px;
+        grid-row-gap: 22px;
+    }
+    &__advantages-item {
+        padding-bottom: 13px;
+        text-align: center;
+    }
+    &__advantages-icon {
+        margin-bottom: 10px;
+    }
+    &__advantages-title {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+    }
+    &__advantages-subtitle {
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--secondary-text-color);
+    }
+
+    .box,
+    .shield,
+    .headphones,
+    .delivery {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .main {
+        &__title {
+            margin-bottom: 60px;
+            font-size: 30px;
+            line-height: 38px;
+            letter-spacing: -0.01em;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__luxury-item-title {
+            width: 574px;
+            font-size: 40px;
+            line-height: 51px;
+            letter-spacing: 40px;
+        }
+        &__carousel-item {
+            height: 460px;
+        }
+        &__hit,
+        &__advantages {
+            margin-bottom: 100px;
+        }
+        &__hit-gallery-description-title {
+            padding-bottom: 15px;
+            margin-bottom: 17px;
+            font-size: 30px;
+            line-height: 38px;
+            letter-spacing: -0.01em;
+        }
+        .catalog__products-item {
+            &.tablet {
+                display: block;
+            }
+        }
+        &__sale {
+            height: 270px;
+        }
+        &__sale-wrapper {
+            height: 250px;
+        }
+        &__sale-wrapper {
+            flex-direction: row;
+        }
+        &__sale-right-block {
+            display: flex;
+            align-items: center;
+        }
+        &__sale-image-right {
+            margin-right: 10px;
+            width: 105px;
+            height: 165px;
+        }
+        &__sale-title-block {
+            margin: 0 38px 0 58px;
+        }
+        &__categories-list {
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+        }
+        &__categories-item-name {
+            padding: 18px 36px;
+            width: auto;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #333;
+        }
+        .box,
+        .shield,
+        .headphones,
+        .delivery {
+            height: 90px;
+            width: 90px;
+        }
+        &__advantages {
+            padding: 65px 38px;
+        }
+        &__advantages-wrapper {
+            width: 544px;
+            margin: 0 auto;
+            grid-column-gap: 100px;
+            grid-row-gap: 68px;
+        }
+        &__advantages-item {
+            width: 222px;
+        }
+        &__advantages-title {
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &__advantages-subtitle {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .main {
+        &__title {
+            font-size: 50px;
+            line-height: 64px;
+        }
+        &__luxury-item-title {
+            width: 787px;
+            font-size: 80px;
+            line-height: 103px;
+            letter-spacing: 40px;
+        }
+        &__hit-gallery {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__hit-gallery-item {
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+            &:nth-child(even) {
+                flex-direction: column-reverse;
+            }
+        }
+        &__hit-gallery-description {
+            width: 100%;
+            min-height: 300px;
+            height: auto;
+        }
+        &__hit-gallery-image {
+            width: 100%;
+            height: 50%;
+        }
+        &__hit-gallery-description-text {
+            width: 228px;
+        }
+        .catalog__products {
+            max-width: 1352px;
+            margin: 0 auto;
+        }
+        .catalog__products-item {
+            &.desktop {
+                display: block;
+            }
+        }
+        &__sale {
+            height: 290px;
+            padding: 20px;
+            left: -20px;
+
+            &.section {
+                max-width: none;
+            }
+        }
+        &__sale-title {
+            display: none;
+        }
+        &__sale-title-desktop {
+            display: block;
+            margin-bottom: 20px;
+        }
+        &__sale-title-block {
+            margin: 0 14px 0 28px;
+        }
+        &__sale-catalog-link {
+            font-size: 17px;
+        }
+        .box,
+        .shield,
+        .headphones,
+        .delivery {
+            height: 108px;
+            width: 108px;
+        }
+        &__advantages-wrapper {
+            grid-row-gap: 90px;
+        }
+        &__advantages {
+            padding: 136px 198px;
+        }
+        &__rhodia-item {
+            align-items: flex-end;
+            padding: 0 0 60px 60px;
+        }
+        &__rhodia-block {
+            width: 350px;
+            padding: 61px 72px;
+        }
+        &__rhodia-text {
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 8px;
+        }
+        &__catalog-link {
+            width: 180px;
+            height: 48px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+        &__want-item {
+            background-color: transparent;
+            padding-left: 50px;
+        }
+        &__want-item-block {
+            width: 544px;
+        }
+        &__store {
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 5px;
+        }
+        &__want-text {
+            margin-bottom: 50px;
+            font-size: 100px;
+            line-height: 98px;
+            letter-spacing: 3px;
+        }
+        &__product-link {
+            width: 175px;
+            height: 48px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+        &__design-item {
+            padding: 0 0 60px 60px;
+        }
+        &__design-block {
+            width: 300px;
+        }
+        &__design-text {
+            margin-bottom: 30px;
+            font-size: 44px;
+            line-height: 1.23;
+        }
+        &__design-link {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media screen and (min-width: 1392px) {
+    .main {
+        &__sale {
+            width: 1352px;
+            position: static;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .main {
+        padding-top: 0;
+
+        .section {
+            width: 1352px;
+            margin: 0 auto 160px;
+        }
+
+        &__wrapper {
+            margin-bottom: 160px;
+        }
+        &__tagline,
+        &__seo {
+            display: block;
+        }
+        &__carousel {
+            width: 1920px;
+            margin: 0 auto;
+        }
+        &__carousel-item {
+            height: 700px;
+        }
+        &__luxury-item-title {
+            width: 1001px;
+            font-size: 120px;
+            line-height: 154px;
+            letter-spacing: 40px;
+        }
+        &__controls-arrow {
+            @include fc(center);
+            width: 120px;
+            height: 120px;
+
+            &.left {
+                position: relative;
+                background: #606060;
+            }
+            &.right {
+                background-color: #333;
+            }
+        }
+        &__controls-arrow-left-wrapper {
+            opacity: 1;
+        }
+        &__page-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 1045px;
+            height: 120px;
+            padding: 25px 123px 22px;
+            background-color: #fff;
+        }
+        &__controls {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        &__page-controls-number {
+            font-size: 38px;
+            line-height: 49px;
+        }
+        &__page-controls-text {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        &__page-controls-item {
+            position: relative;
+            color: #333;
+
+            &:not(:last-child) {
+                padding-right: 120px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 54px;
+                    right: 0;
+                    top: 10px;
+
+                    background: #e8e8e8;
+                }
+            }
+            &.active {
+                color: #c4b8a5;
+            }
+        }
+        &__hit,
+        &__advantages {
+            margin-bottom: 160px;
+        }
+        &__hit-gallery {
+            position: relative;
+            left: -50px;
+            width: 1920px;
+            gap: 0;
+        }
+        &__hit-gallery-image {
+            img {
+                height: 480px;
+            }
+        }
+        &__hit-gallery-description {
+            padding: 0 100px;
+            min-height: 480px;
+        }
+        &__hit-gallery-description-text {
+            width: 100%;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        &__hit-gallery-item {
+            gap: 0;
+
+            &.desktop {
+                display: flex;
+            }
+        }
+        &__lamy {
+            display: flex;
+            align-items: center;
+            width: 1352px;
+            margin: 0 auto 160px;
+        }
+        &__lamy-description {
+            margin-right: 49px;
+        }
+        &__lamy-description-text {
+            font-size: 20px;
+            line-height: 26px;
+            color: #858585;
+        }
+        &__lamy-title {
+            margin-bottom: 7px;
+            font-size: 50px;
+            line-height: 64px;
+            letter-spacing: -0.01em;
+            color: #333;
+        }
+        &__lamy-image {
+            img {
+                min-width: 885px;
+            }
+        }
+        &__sale {
+            left: 0;
+        }
+        &__sale-title-block {
+            margin: 0 150px 0 91px;
+        }
+        &__categories-list {
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+        }
+        &__lamy-history {
+            &.section {
+                display: block;
+                width: 875px;
+                margin: 0 auto 160px;
+                text-align: center;
+                padding: 0 37.5px;
+            }
+        }
+        &__lamy-history-title {
+            margin-bottom: 30px;
+            font-size: 60px;
+            line-height: 77px;
+            text-align: center;
+            letter-spacing: -0.01em;
+        }
+        &__lamy-history-text {
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        &__more {
+            @include fc(center);
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        &__more-text {
+            margin-right: 5px;
+        }
+        .arrowWrapper {
+            height: 21px;
+            transition: all 100ms ease-in;
+
+            &.rotate {
+                transform: rotate(180deg);
+            }
+        }
+        &__brands {
+            @include fc(center);
+            gap: 30px;
+        }
+        &__advantages {
+            position: relative;
+            left: -50px;
+            width: 1920px;
+            padding: 113px 0 79px;
+        }
+        &__advantages-wrapper {
+            @include fc(space-between);
+            width: 1352px;
+        }
+        &__advantages-icon,
+        &__advantages-title {
+            margin-bottom: 20px;
+        }
+
+        &__advantages-item {
+            &:nth-child(2) {
+                width: 276px;
+            }
+            &:nth-child(3) {
+                width: 171px;
+            }
+        }
+        .catalog__products-item {
+            &:nth-child(7) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            &:nth-child(13) {
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+        }
+        &__сonsumables {
+            display: none;
+        }
+        &__seo-description {
+            width: 845px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            margin: 0 auto 30px;
+            color: var(--secondary-text-color);
+        }
+        &__seo-gallery {
+            display: flex;
+            align-items: center;
+            gap: 49px;
+        }
+        &__seo-item {
+            width: 418px;
+        }
+        &__tagline-text {
+            width: 602px;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 77px;
+            text-align: center;
+            letter-spacing: -0.01em;
+        }
+        &__brand {
+            @include fc(space-between);
+            flex-direction: column;
+            padding: 66px 54px;
+            width: 250px;
+            height: 250px;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: border-color 150ms ease-in;
+
+            &:hover,
+            &:focus {
+                border-color: var(--primary-text-color);
+            }
+        }
+        &__brand-link {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: var(--primary-text-color);
+            }
+        }
+        .twbsi-img {
+            position: relative;
+            top: 8px;
+        }
+    }
+}

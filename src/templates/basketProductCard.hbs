@@ -1,0 +1,68 @@
+<li class='basket__product'>
+    <button id='delete-product' type='button' class='basket__product-delete640 btn'>
+        <svg class='crossLogo' width='16' height='16' viewBox='0 0 16 16' fill='none'>
+            <path
+                d='M2.84435 2.84315L8.50121 8.5M14.1581 14.1569L8.50121 8.5M8.50121 8.5L2.84435 14.1569L14.1581 2.84315'
+                stroke='#313131'
+                stroke-width='1.5'
+            />
+        </svg>
+    </button>
+    <div class='basket__product-image-wrapper'>
+        <img src='{{image}}' alt='Ручка' class='basket__product-image' />
+        <div class='basket__product-color {{color}}'></div>
+        <div class='basket__product-size'>{{size}}</div>
+    </div>
+    <div class='basket__product-info'>
+        <h3 class='basket__product-title'>{{brand_name}}</h3>
+        <p class='basket__product-description'>{{description}}</p>
+        <div class='basket__product-quantity-block'>
+            <div class='basket__product-quantity'>
+                <span class='basket__product-quantity-text'>Кол-во:</span>
+                <span class='basket__product-quantity-number number'>{{quantity}}</span>
+            </div>
+            <div class='basket__product-quantity'>
+                <span class='basket__product-quantity-text'>Сумма:</span>
+                <span class='basket__product-quantity-number'>{{price_rub}} ₽</span>
+            </div>
+        </div>
+        <div class='basket__product-quantity-block640'>
+            <div class='basket__product-size-color'>Размер: <span>{{size}}</span> / Цвет:</div>
+            <div class='basket__product-color640 {{color}}'></div>
+        </div>
+    </div>
+    <div class='basket__product-price-block'>
+        <div class='basket__product-price'>${{price}}</div>
+        <div class='basket__product-counter'>
+            <button type='button' class='basket__counter-minus btn'>-</button>
+            <div class='basket__counter-quantity'>02</div>
+            <button type='button' class='basket__counter-minus btn'>+</button>
+        </div>
+        <div class='basket__product-cost'>${{cost}}</div>
+    </div>
+    <button id='delete-product' type='button' class='basket__product-delete btn'>
+        <svg
+            class='crossLogo'
+            width='16'
+            height='16'
+            viewBox='0 0 16 16'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+        >
+            <g clip-path='url(#clip0_733_35306)'>
+                <path
+                    d='M2.84435 2.84315L8.50121 8.5M14.1581 14.1569L8.50121 8.5M8.50121 8.5L2.84435 14.1569L14.1581 2.84315'
+                    stroke='#313131'
+                    stroke-width='1.5'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                />
+            </g>
+            <defs>
+                <clipPath id='clip0_733_35306'>
+                    <rect width='15' height='15' fill='white' transform='translate(0.5 0.5)' />
+                </clipPath>
+            </defs>
+        </svg>
+    </button>
+</li>

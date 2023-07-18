@@ -1,0 +1,12 @@
+<div class='desktopMenu__block'>
+    <h2 class='desktopMenu__title'><a class='desktopMenu__title-link' href='catalog.html'>{{title}}</a></h2>
+    <ul class='desktopMenu__list'>
+        {{#each list}}
+            {{#if this.name}}
+                <li class='desktopMenu__item'><a href='{{href}}' class='desktopMenu__item-link'>{{this.name}}</a></li>
+            {{else}}
+                <li class='desktopMenu__item'><a href='#' class='desktopMenu__item-link'>{{this}}</a></li>
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>

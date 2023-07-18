@@ -1,0 +1,47 @@
+<li class='sitemap__item'>
+    <a href='{{path}}' class='sitemap__item-name'>{{name}}</a>
+    {{#each catalog}}
+        <div class='sitemap__item-subtitle'>{{this.subtitle}}</div>
+        <div class='sitemap__item-wrapper'>
+            <div class='sitemap__item-main-block'>
+                {{#each mainColumn}}
+                    <div class='sitemap__item-position-wrapper'>
+                        <div class='sitemap__item-position-dot'></div>
+                        <div class='sitemap__item-position'>{{this.position}}</div>
+                    </div>
+                    <ul class='sitemap__item-brands'>
+                        {{#each this.brands}}
+                            <li class='sitemap__item-brand'>— {{this}}</li>
+                        {{/each}}
+                    </ul>
+                {{/each}}
+            </div>
+            <div class='sitemap__item-second-block'>
+                {{#each secondColumn}}
+                    <div class='sitemap__item-position-wrapper'>
+                        <div class='sitemap__item-position-dot'></div>
+                        <div class='sitemap__item-position'>{{this.position}}</div>
+                    </div>
+                    <ul class='sitemap__item-brands'>
+                        {{#each this.brands}}
+                            <li class='sitemap__item-brand'>— {{this}}</li>
+                        {{/each}}
+                    </ul>
+                {{/each}}
+            </div>
+            <div class='sitemap__item-third-block'>
+                {{#each thirdColumn}}
+                    <div class='sitemap__item-position-wrapper'>
+                        <div class='sitemap__item-position-dot'></div>
+                        <div class='sitemap__item-position'>{{this.position}}</div>
+                    </div>
+                    <ul class='sitemap__item-brands'>
+                        {{#each this.brands}}
+                            <li class='sitemap__item-brand'>— {{this}}</li>
+                        {{/each}}
+                    </ul>
+                {{/each}}
+            </div>
+        </div>
+    {{/each}}
+</li>
