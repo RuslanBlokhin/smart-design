@@ -24,11 +24,11 @@
         }
     }
     &__item-icon {
-        max-width: 100px;
+        max-width: 800px;
     }
     &__icon-wrapper {
         float: left;
-        width: 100px;
+        width: 80px;
         margin: 10px 10px 0 0;
     }
     &__item-images {
@@ -92,23 +92,28 @@
             padding: 0 20px 90px;
         }
         &__item {
-            &:not(.headingPost) {
-                display: flex;
-                align-items: flex-start;
+            display: flex;
+            align-items: flex-start;
 
-                &:nth-child(odd) {
-                    gap: 78px;
+            &:nth-child(odd) {
+                gap: 78px;
+
+                .delivery__item-image {
+                    img {
+                        min-width: 700px;
+                        height: 550px;
+                    }
                 }
-                &:nth-child(even) {
-                    gap: 49px;
-                    flex-direction: row-reverse;
-                }
-                &:not(:last-child) {
-                    margin-bottom: 96px;
-                }
-                .delivery__item-description {
-                    margin-bottom: 0;
-                }
+            }
+            &:nth-child(2) {
+                gap: 49px;
+                flex-direction: row-reverse;
+            }
+            &:not(:last-child) {
+                margin-bottom: 96px;
+            }
+            .delivery__item-description {
+                margin-bottom: 0;
             }
             &.headingPost {
                 .delivery__item-description {
@@ -131,7 +136,7 @@
         &__item-image {
             &.one {
                 img {
-                    min-width: 460px;
+                    width: 300px;
                 }
             }
         }
@@ -146,7 +151,6 @@
         }
         &__item {
             &:not(.headingPost) {
-                align-items: center;
                 &:nth-child(odd) {
                     gap: 49px;
                 }
@@ -157,15 +161,6 @@
             &.headingPost {
                 .delivery__item-description {
                     width: 845px;
-                }
-            }
-            &:first-child,
-            &:nth-child(3) {
-                .delivery__item-image {
-                    img {
-                        min-width: 885px;
-                        height: 593px;
-                    }
                 }
             }
             &:nth-child(2),
@@ -180,8 +175,7 @@
                     }
                 }
             }
-            &:nth-child(3),
-            &:nth-child(4) {
+            &:nth-child(3) {
                 flex-direction: row-reverse;
             }
         }

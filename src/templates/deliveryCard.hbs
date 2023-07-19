@@ -1,12 +1,14 @@
 <li class='delivery__item {{headingPost}}'>
     <div class='delivery__item-text-block'>
         <div class='delivery__item-text-block-wrapper'>
-            <h3 class='delivery__item-title'>{{title}}</h3>
-            {{#if icon}}
-                <figure class='delivery__icon-wrapper'>
-                    <img class='delivery__item-icon' src='{{icon}}' alt='delivery-icon' />
-                </figure>
-            {{/if}}
+            <div class='delivery__item-text-title-icon'>
+                {{#if icon}}
+                    <figure class='delivery__icon-wrapper'>
+                        <img class='delivery__item-icon' src='{{icon}}' alt='delivery-icon' />
+                    </figure>
+                {{/if}}
+                <h3 class='delivery__item-title'>{{title}}</h3>
+            </div>
             {{#if description}}
                 {{#each description}}
                     <p class='delivery__item-description'>{{this}}</p>
